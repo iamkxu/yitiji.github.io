@@ -34,7 +34,3 @@ gallery2:
 
 &emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/2d-material-hardware/){: .btn .btn--success .btn--large}
 {: .text-right}
-
----
-
-## 参考论文

@@ -18,5 +18,8 @@ gallery:
 
 ---
 
-&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 联系购买](){: .btn .btn--success .btn--large}
+&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 联系购买](http://hzwtech.com/about/3.html){: .btn .btn--success .btn--large}
 {: .text-right}
+
+鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！
+{: .notice--info}

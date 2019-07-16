@@ -40,17 +40,17 @@ var store = [{
         "url": "http://localhost:4000/hzwconfig/vasp-install/",
         "teaser":null},{
         "title": "鸿之微-二维材料设计一体机",
-        "excerpt":"可选硬件方案    鸿之微-二维材料设计一体机根据根据软件的计算特性，建议您选择：     最强算力：双路CPU + 四路GPU配置方案   进阶算力：双路CPU + 双路GPU配置方案        联系购买  ","categories": [],
+        "excerpt":"可选硬件方案    鸿之微-二维材料设计一体机根据根据软件的计算特性，建议您选择：     最强算力：双路CPU + 四路GPU配置方案   进阶算力：双路CPU + 双路GPU配置方案        联系购买   鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hzwhardware/2d-material-hardware/",
         "teaser":null},{
         "title": "鸿之微-二维材料设计一体机",
-        "excerpt":"  鸿之微-二维材料设计一体机搭载了RESCU和Nanodcal两款常用二维材料设计软件，为您在二维材料设计中提供强力助推。   RESCU介绍     RESCU是一款仅仅用小型计算机就能研究超大体系的KS-DFT计算软件。 RESCU是Real space Electronic Structure CalcUlator（实空间电子结构计算程序）的缩写，它的核心是一种全新、极其强大、并行效率超高的KS-DFT自洽计算方法。     RESCU可以使用一体机种有限的计算机资源，并且还可以使用GPU进行加速计算，来计算包含一千、数千、上万体系的电子结构性质。RESCU是解决超大体系KS-DFT问题的里程碑式的新方法，正在被应用于金属、半导体、绝缘体、液体、DNA、1维、2维、3维、表面、分子、磁性、非磁性、杂质、固体等等不同系统的KS-DFT计算。                                                  RESCU主要功能       Nanodcal介绍     Nanodcal是基于NEGF-DFT的材料计算和电子器件量子输运模拟的通用大型计算软件程序包，主要用于模拟器件材料中的非线性、非平衡的量子输运过程，是目前最先进的基于第一性原理的输运软件。Nanodcal可以用于材料物性、分子电子学、自旋电子学、光电流、半导体电子学器件设计等方面的研究工作。                                                  Nanodcal主要功能           选择硬件     参考论文  ","categories": [],
+        "excerpt":"  鸿之微-二维材料设计一体机搭载了RESCU和Nanodcal两款常用二维材料设计软件，为您在二维材料设计中提供强力助推。   RESCU介绍     RESCU是一款仅仅用小型计算机就能研究超大体系的KS-DFT计算软件。 RESCU是Real space Electronic Structure CalcUlator（实空间电子结构计算程序）的缩写，它的核心是一种全新、极其强大、并行效率超高的KS-DFT自洽计算方法。     RESCU可以使用一体机种有限的计算机资源，并且还可以使用GPU进行加速计算，来计算包含一千、数千、上万体系的电子结构性质。RESCU是解决超大体系KS-DFT问题的里程碑式的新方法，正在被应用于金属、半导体、绝缘体、液体、DNA、1维、2维、3维、表面、分子、磁性、非磁性、杂质、固体等等不同系统的KS-DFT计算。                                                  RESCU主要功能       Nanodcal介绍     Nanodcal是基于NEGF-DFT的材料计算和电子器件量子输运模拟的通用大型计算软件程序包，主要用于模拟器件材料中的非线性、非平衡的量子输运过程，是目前最先进的基于第一性原理的输运软件。Nanodcal可以用于材料物性、分子电子学、自旋电子学、光电流、半导体电子学器件设计等方面的研究工作。                                                  Nanodcal主要功能           选择硬件  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hzwhardware/2d-material-software/",
         "teaser":null},{
         "title": "鸿之微-机器学习材料设计一体机",
-        "excerpt":"可选硬件方案    鸿之微-机器学习材料设计一体机根据根据软件的计算特性，建议您选择：     进阶算力：双路CPU + 双路GPU配置方案   均衡算力：双路CPU配置方案        联系购买  ","categories": [],
+        "excerpt":"可选硬件方案    鸿之微-机器学习材料设计一体机根据根据软件的计算特性，建议您选择：     进阶算力：双路CPU + 双路GPU配置方案   均衡算力：双路CPU配置方案        联系购买   鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hzwhardware/ai-material-hardware/",
         "teaser":null},{
@@ -60,7 +60,7 @@ var store = [{
         "url": "http://localhost:4000/hzwhardware/ai-material-software/",
         "teaser":null},{
         "title": "鸿之微-电池材料设计一体机",
-        "excerpt":"可选硬件方案    鸿之微-电池材料设计一体机根据软件的计算特性，建议您选择：     最强算力：双路CPU + 四路GPU配置方案   进阶算力：双路CPU + 双路GPU配置方案        联系购买  ","categories": [],
+        "excerpt":"可选硬件方案    鸿之微-电池材料设计一体机根据软件的计算特性，建议您选择：     最强算力：双路CPU + 四路GPU配置方案   进阶算力：双路CPU + 双路GPU配置方案        联系购买   鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hzwhardware/battery-material-hardware/",
         "teaser":null},{
@@ -95,7 +95,7 @@ var store = [{
         "url": "http://localhost:4000/hzwhardware/hardware-introduce/",
         "teaser":null},{
         "title": "鸿之微-量子输运计算一体机",
-        "excerpt":"可选硬件方案    鸿之微-量子输运计算一体机根据根据软件的计算特性，建议您选择：     均衡算力：双路CPU配置方案        联系购买  ","categories": [],
+        "excerpt":"可选硬件方案    鸿之微-量子输运计算一体机根据根据软件的计算特性，建议您选择：     均衡算力：双路CPU配置方案        联系购买   鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hzwhardware/nanodcal-hardware/",
         "teaser":null},{
@@ -105,7 +105,7 @@ var store = [{
         "url": "http://localhost:4000/hzwhardware/nanodcal-software/",
         "teaser":null},{
         "title": "鸿之微-有机发光材料设计一体机",
-        "excerpt":"可选硬件方案    鸿之微-有机发光材料设计一体机根据根据软件的计算特性，建议您选择：     均衡算力：双路CPU配置方案        联系购买  ","categories": [],
+        "excerpt":"可选硬件方案    鸿之微-有机发光材料设计一体机根据根据软件的计算特性，建议您选择：     均衡算力：双路CPU配置方案        联系购买   鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hzwhardware/oled-material-hardware/",
         "teaser":null},{
@@ -115,7 +115,7 @@ var store = [{
         "url": "http://localhost:4000/hzwhardware/oled-material-software/",
         "teaser":null},{
         "title": "鸿之微-大体系KS-DFT计算一体机",
-        "excerpt":"可选硬件方案    鸿之微-二维材料设计一体机根据根据软件的计算特性，建议您选择：     最强算力：双路CPU + 四路GPU配置方案   进阶算力：双路CPU + 双路GPU配置方案        联系购买  ","categories": [],
+        "excerpt":"可选硬件方案    鸿之微-二维材料设计一体机根据根据软件的计算特性，建议您选择：     最强算力：双路CPU + 四路GPU配置方案   进阶算力：双路CPU + 双路GPU配置方案        联系购买   鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hzwhardware/rescu-hardware/",
         "teaser":null},{
