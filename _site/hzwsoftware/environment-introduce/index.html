@@ -1,0 +1,676 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>计算模拟环境使用简介 - 鸿之微一体机</title>
+<meta name="description" content="CentOS简介.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="鸿之微一体机">
+<meta property="og:title" content="计算模拟环境使用简介">
+<meta property="og:url" content="http://localhost:4000/hzwsoftware/environment-introduce/">
+
+
+  <meta property="og:description" content="CentOS简介.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-07-16T14:13:18+08:00">
+
+
+
+  <meta property="article:modified_time" content="2019-04-19T03:53:52+08:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/hzwsoftware/environment-introduce/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "鸿之微一体机",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="鸿之微一体机 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/hzw-logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">鸿之微一体机</a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/">立即了解</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/hzwhardware/hardware-introduce/">选购产品</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/hzwservice/service-introduce/">服务保障</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/hzwsoftware/yitiji-introduce/">使用手册与软件教程</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/hzwconfig/config-introduce/">软件安装</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">切换菜单</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">快速使用手册</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/yitiji-introduce/#%E8%BD%AF%E7%A1%AC%E4%BB%B6%E5%B9%B3%E5%8F%B0%E7%AE%80%E4%BB%8B" class="">软硬件平台简介</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/centos-introduce/" class="">操作系统使用简介</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/environment-introduce/" class="active">计算模拟环境使用简介</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/frequently-asked-question/" class="">常见问题</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">软件教程与案例</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/device-studio-introduce/" class="">Device Studio简介</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/device-studio-quick-guide/" class="">Device Studio快速使用手册</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title"></span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/rescu-manual/" class="">RESCU教程</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/rescu-examples/" class="">RESCU案例</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title"></span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/nanodcal-manual/" class="">Nanodcal教程</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/nanodcal-examples/" class="">Nanodcal案例</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title"></span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/first-manual/" class="">FIRST教程</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/first-examples/" class="">FIRST案例</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title"></span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/momap-manual/" class="">MOMAP教程</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/momap-examples/" class="">MOMAP案例</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="计算模拟环境使用简介">
+    <meta itemprop="description" content="CentOS简介.">
+    
+    <meta itemprop="dateModified" content="April 18, 2019">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">计算模拟环境使用简介
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> 在本页上</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#%E9%A2%84%E8%A3%85%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%B7%AF%E5%BE%84">预装软件安装路径</a></li>
+  <li><a href="#%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83">程序编译环境</a></li>
+  <li><a href="#%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97%E6%A8%A1%E5%9D%97">并行计算模块</a></li>
+  <li><a href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%8A%A0%E8%BD%BD">环境变量加载</a></li>
+  <li>
+<a href="#%E4%BD%9C%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">作业管理系统</a>
+    <ul>
+      <li><a href="#pbs%E4%BD%9C%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4">PBS作业管理系统常用命令</a></li>
+      <li><a href="#pbs%E4%BD%9C%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E4%BD%9C%E4%B8%9A%E6%8F%90%E4%BA%A4%E6%B5%81%E7%A8%8B">PBS作业管理系统作业提交流程</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>  鸿之微“一体机”已为您集成了一套完整的计算模拟环境，包括：</p>
+<ul>
+  <li>程序编译环境 <a href="https://gcc.gnu.org/">GCC</a>
+</li>
+  <li>并行计算模块 <a href="https://www.open-mpi.org/">OpenMPI</a>
+</li>
+  <li>作业管理系统 <a href="http://www.adaptivecomputing.com/products/torque/">Torque pbs</a>
+</li>
+  <li>环境变量管理工具 <a href="http://modules.sourceforge.net/">Environment Modules</a>
+</li>
+</ul>
+
+<p class="notice--info">注：这些软件都是免费的开源的自由软件，存在庞大的用户群，本章针对这些软件做简要的介绍，更详细的使用方法可以在互联网上直接搜索相关信息。</p>
+
+<h2 id="预装软件安装路径">预装软件安装路径</h2>
+
+<p>  鸿之微“一体机”为您预装的计算和管理软件均安装在以下路径，您可以在有需求时查看：</p>
+<ul>
+  <li><code class="highlighter-rouge">/public # 软件安装文件夹</code></li>
+  <li><code class="highlighter-rouge">/public/bin # 可执行软件存放文件夹</code></li>
+  <li><code class="highlighter-rouge">/software # 软件安装包存放文件夹</code></li>
+</ul>
+
+<h2 id="程序编译环境">程序编译环境</h2>
+
+<p>  鸿之微“一体机”中安装通用编译器GCC，可以编译C语言(gcc)、C++语言(g++)和Fortran语言(gfortran)。如果您有其他计算模拟软件或者自己编写的程序，可以使用上述编译器编译并在鸿之微“一体机”上运行。</p>
+
+<p class="notice--success">例如：您有一个用<code class="highlighter-rouge">Fortran</code>语言编写的蒙特卡洛模拟程序<code class="highlighter-rouge">mc.f</code>，首先需要通过网络或者移动存储设备复制到器件模拟一体机上，然后使用命令<code class="highlighter-rouge">gfortran -o mc mc.f</code>获得一个可执行程序<code class="highlighter-rouge">mc</code>，最后使用命令<code class="highlighter-rouge">./mc</code>在鸿之微“一体机”上运行。</p>
+
+<h2 id="并行计算模块">并行计算模块</h2>
+
+<p>  并行计算模块是计算模拟环境中非常重要的一部分，大型的计算模拟程序都支持并行计算，这样可以突破单机限制使计算模拟的速度更快和模拟更大尺度的系统。在鸿之微“一体机”上，我们安装了OpenMPI软件，支持C语言(mpicc)、C++语言(mpic++)和Fortran语言(mpif77和mpif90)。</p>
+
+<p class="notice--success">例如，您有一个用<code class="highlighter-rouge">Fortran</code>语言编写的并行蒙特卡洛模拟程序<code class="highlighter-rouge">mcp.f</code>，首先需要通过网络或者移动存储设备复制到鸿之微“一体机”上，然后使用命令<code class="highlighter-rouge">mpif90 -o mcp mcp.f</code>获得一个可执行程序<code class="highlighter-rouge">mcp</code>，最后使用命令<code class="highlighter-rouge">mpirun -n 8 ./mcp</code>在鸿之微“一体机”上运行<code class="highlighter-rouge">8</code>核并行计算（并行数量可以自行修改，最好不要超过“一体机”的总核数）。</p>
+
+<p>  鸿之微“一体机”针对不同计算软件分别安装不同并行计算环境，如果需要使用并行计算，需针对特定的软件在计算前手动加载环境变量，详见后文<a href="/hzwsoftware/environment-introduce/#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%8A%A0%E8%BD%BD">环境变量加载</a>。</p>
+
+<h2 id="环境变量加载">环境变量加载</h2>
+
+<p>  在 Linux 超算平台上，通常会安装有不同版本的多种编译器和其他软件等，如常用的编译器有 intel 和 gnu，常用的 MPI 并行库包括 intel mpi，openmpi，mpich2 等，而且对于同一软件，还包含不同的版本或采用不同编译设置得到的可执行程序和链接库等。在使用这些程序时，经常需要对环境变量进行修改。并且由于程序编译时会调用不同类型编译器或第三库，这时程序之间还存在着依赖关系。这使得当执行某个特定版本的程序时，环境变量的修改变得十分复杂。</p>
+
+<p>  Environment Modules软件包是一个简化 shell 初始化的工具，它允许用户在使用 modulefiles 进行会话期间轻松修改其环境。每个模块文件都包含为应用程序配置 shell 所需的信息。鸿之微“一体机”以为您预装Environment Modules软件包，Modules软件包安装路径为<code class="highlighter-rouge">/public/modules-4.2.2</code>。您可以用以下命令修改您需要加载的环境变量。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module avial                   <span class="c">#当前已有modules</span>
+module list                    <span class="c">#当前加载modules列表</span>
+module load module-name       <span class="c">#加载module-name</span>
+moudule unload module-name    <span class="c">#卸载module-name</span>
+module switch module-name     <span class="c">#切换到module-name</span>
+</code></pre></div></div>
+
+<h2 id="作业管理系统">作业管理系统</h2>
+
+<p>  作业管理系统提供计算作业的提交、调度、执行等功能，对于大型计算机集群作业管理系统是整个系统中非常重要的一部分。在鸿之微“一体机”中已为您预装了常用作业管理系统<code class="highlighter-rouge">Torque PBS</code>。</p>
+
+<p>  您使用<code class="highlighter-rouge">hzwtech</code>用户登陆鸿之微“一体机”桌面时，可以在桌面看到一个名为<code class="highlighter-rouge">pbs_script_example</code>的文件夹。或者，您远程登陆时可以使用<code class="highlighter-rouge">cd</code>命令切换到路径<code class="highlighter-rouge">/public/pbs_script_example</code>。在<code class="highlighter-rouge">pbs_script_example</code>文件夹中存放的是用于不同计算软件的作业管理系统的提交实例。实例脚本的文件名是<code class="highlighter-rouge">nanodcal.pbs</code>等。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span><span class="nb">pwd</span>
+/public/pbs_script_example
+<span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span><span class="nb">ls
+</span>lammps.pbs  nanodcal.pbs  pbs_example.pbs rescu.pbs  vasp.pbs
+</code></pre></div></div>
+
+<p>  以<code class="highlighter-rouge">nanodcal.pbs</code>文件为例，文件内容如下。</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+<span class="c">#PBS -N nanodcal_job_name</span>
+<span class="c">#PBS -o _out.dat</span>
+<span class="c">#PBS -e _err.dat</span>
+<span class="c">#PBS -q batch</span>
+<span class="c">#PBS -l nodes=1:ppn=1</span>
+<span class="c">#PBS -l walltime=240:00:00</span>
+
+<span class="c"># load the needed environment path</span>
+
+module load gcc/4.7.4-Nanodcal
+module unload mpi/openmpi-1.8.5
+module load mpi/openmpi-1.8.5-Nanodcal
+module load Matlab/R2015B
+
+<span class="nv">NCPU</span><span class="o">=</span><span class="sb">`</span><span class="nb">wc</span> <span class="nt">-l</span> &lt; <span class="nv">$PBS_NODEFILE</span><span class="sb">`</span>
+<span class="nb">cd</span> <span class="nv">$PBS_O_WORKDIR</span>
+
+mpirun <span class="nt">-hostfile</span> <span class="nv">$PBS_NODEFILE</span> <span class="nt">-n</span> <span class="nv">$NCPU</span> matlab <span class="nt">-nodisplay</span> <span class="nt">-r</span> <span class="s2">"nanodcal -parallel -doexit input.txt"</span>
+</code></pre></div></div>
+
+<ul class="notice">
+  <li>其中第1行是系统脚本注释，不用修改；第2-7行是作业管理系统参数；第8-15行是需要执行的命令行。</li>
+  <li>第2行定义作业名称，此处为<code class="highlighter-rouge">nanodcal_job_name</code>，将会显示在作业队列中。如果您有多个作业需要提交，建议修改这个名称以方便在作业队列中区分。</li>
+  <li>第3行和第4行为将程序运行中的标准输出和标准错误，输出到<code class="highlighter-rouge">_out.dat</code>和<code class="highlighter-rouge">_err.dat</code>文件中。</li>
+  <li>第5行定义任务提交到哪个队列中，此处为<code class="highlighter-rouge">batch</code>队列。</li>
+  <li>第6行定义需要的计算资源，即这个作业需要多少个节点<code class="highlighter-rouge">nodes</code>和每个节点多少个核<code class="highlighter-rouge">ppn</code>。在鸿之微“一体机”中，通常只有一个计算节点，所以<code class="highlighter-rouge">nodes</code>此处=<code class="highlighter-rouge">1</code>，至于<code class="highlighter-rouge">ppn</code>=几，您可根据需要自行设置，但是不能大于“一体机”的总核数。</li>
+  <li>第7行定义计算时间，即这个计算作业最长允许计算的时间，超过最长时间，任务会被系统自动终止。此处为最长时间是240小时，这个参数您需要根据作业的计算时长自行设定，一般可以设置较大，如<code class="highlighter-rouge">2400:00:00</code>。</li>
+  <li>第8-12行为使用<code class="highlighter-rouge">module</code>命令加载<code class="highlighter-rouge">nanodcal</code>计算中需要加载的环境变量。</li>
+  <li>第13行为统计本次本次计算中需要用到的总核数，以用于<code class="highlighter-rouge">mpirun</code>并行计算。</li>
+  <li>第14行表示脚本需要从当前目录切换到工作目录，工作目录就是提交作业的目录。这一行是必须的，缺省的当前目录是用户根目录，需要切换到工作目录才能进行计算，这一行必须放在其他需要执行的命令行之前。</li>
+  <li>第15行是需要执行的<code class="highlighter-rouge">nanodcal</code>并行计算命令行。</li>
+  <li>您可以根据需要把这些行修改成自己需要的计算命令。</li>
+</ul>
+
+<h3 id="pbs作业管理系统常用命令">PBS作业管理系统常用命令</h3>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qsub jobfile1 <span class="c"># 提交任务文件'jobfile1'</span>
+qdel id1 <span class="c"># 删除Job ID为'id1'的计算任务</span>
+qstat <span class="c"># 查看当前已提交任务计算状态</span>
+qnodes <span class="c"># 查看各计算节点硬件状态</span>
+</code></pre></div></div>
+<h3 id="pbs作业管理系统作业提交流程">PBS作业管理系统作业提交流程</h3>
+
+<p>  首先使用<code class="highlighter-rouge">cd</code>命令切换到路径<code class="highlighter-rouge">/public/pbs_script_example</code>。当前“一体机”中没有任何计算作业，输入<code class="highlighter-rouge">qstat</code>命令，可以看到没有任何显示结果。</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span> qstat
+<span class="o">[</span>hzwtech@hzwtech]<span class="err">$</span>
+</code></pre></div></div>
+<p>  使用<code class="highlighter-rouge">qsub</code>命令提交6次例子<code class="highlighter-rouge">pbs_example.pbs</code>，同时可以得到它们的任务编号。</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qsub pbs_example.sh
+11.hzwtech
+<span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qsub pbs_example.sh
+12.hzwtech
+<span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qsub pbs_example.sh
+13.hzwtech
+<span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qsub pbs_example.sh
+14.hzwtech
+<span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qsub pbs_example.sh
+15.hzwtech
+<span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qsub pbs_example.sh
+16.hzwtech
+</code></pre></div></div>
+<p>  接下来再次输入<code class="highlighter-rouge">qstat</code>命令查看计算队列。</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qstat
+Job ID         Name        User         Time Use  S Queue
+<span class="nt">--------------</span> <span class="nt">-----------</span> <span class="nt">-----------</span> <span class="nt">----------</span> - <span class="nt">-----</span>
+11.hzwtech     example     hzwtech             0  R batch
+12.hzwtech     example     hzwtech             0  R batch
+13.hzwtech     example     hzwtech             0  R batch
+14.hzwtech     example     hzwtech             0  Q batch
+15.hzwtech     example     hzwtech             0  Q batch
+16.hzwtech     example     hzwtech             0  Q batch
+</code></pre></div></div>
+<p>  现在可以在计算队列中看到刚才提交的6个作业，每个作业申请8核，如果一体机有24核，那么将会只有前三个作业在计算<code class="highlighter-rouge">R</code>，后三个作业还在排队<code class="highlighter-rouge">Q</code>（倒数第二列表示计算状态）。</p>
+
+<p>  如果想要删除一个作业，要先确定任务编号，然后运行<code class="highlighter-rouge">qdel</code>命令，随后查看计算队列确认被中止。</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qdel 16
+<span class="o">[</span>hzwtech@hzwtech]<span class="nv">$ </span>qstat
+Job ID         Name        User         Time Use  S Queue
+<span class="nt">--------------</span> <span class="nt">-----------</span> <span class="nt">-----------</span> <span class="nt">----------</span> - <span class="nt">-----</span>
+11.hzwtech     example     hzwtech             0  R workq
+12.hzwtech     example     hzwtech             0  R workq
+13.hzwtech     example     hzwtech             0  R workq
+14.hzwtech     example     hzwtech             0  Q workq
+15.hzwtech     example     hzwtech             0  Q workq
+16.hzwtech     example     hzwtech             0  C workq
+</code></pre></div></div>
+<p>  现在可以在看到编号为16计算作业的状态发生变化，从原来的等待状态<code class="highlighter-rouge">Q</code>变成完成状态<code class="highlighter-rouge">C</code>，说明任务16已经中止，不会被执行。</p>
+
+<p>  等待几分钟后，再次查看计算队列，所有提交的例子都已经完成。</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hzw@hzwtech:~/pbs_guide&gt; qstat
+Job ID         Name        User         Time Use  S Queue
+<span class="nt">--------------</span> <span class="nt">-----------</span> <span class="nt">-----------</span> <span class="nt">----------</span> - <span class="nt">-----</span>
+11.hzwtech     example     hzwtech      00:00:00  C workq
+12.hzwtech     example     hzwtech      00:00:00  C workq
+13.hzwtech     example     hzwtech      00:00:00  C workq
+14.hzwtech     example     hzwtech      00:00:00  C workq
+15.hzwtech     example     hzwtech      00:00:00  C workq
+16.hzwtech     example     hzwtech             0  C workq
+</code></pre></div></div>
+<p>  鸿之微“一体机”祝您使用愉快 <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"> ！</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time datetime="2019-04-18">April 18, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/hzwsoftware/device-studio-quick-guide/" class="pagination--pager" title="Device Studio使用手册
+">向前</a>
+    
+    
+      <a href="/hzwsoftware/first-examples/" class="pagination--pager" title="FIRSTt软件的使用介绍
+">向后</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<input type="search" id="search" aria-placeholder="输入您要搜索的关键词..." class="search-input" tabindex="-1" placeholder="输入您要搜索的关键词...">
+    <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2019 鸿之微一体机. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

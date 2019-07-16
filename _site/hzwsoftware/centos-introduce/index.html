@@ -1,0 +1,771 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>CentOS 操作系统使用简介 - 鸿之微一体机</title>
+<meta name="description" content="CentOS 操作系统使用简介">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="鸿之微一体机">
+<meta property="og:title" content="CentOS 操作系统使用简介">
+<meta property="og:url" content="http://localhost:4000/hzwsoftware/centos-introduce/">
+
+
+  <meta property="og:description" content="CentOS 操作系统使用简介">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-07-16T14:13:18+08:00">
+
+
+
+  <meta property="article:modified_time" content="2019-04-19T03:53:52+08:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/hzwsoftware/centos-introduce/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "鸿之微一体机",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="鸿之微一体机 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/hzw-logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">鸿之微一体机</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >立即了解</a>
+            </li><li class="masthead__menu-item">
+              <a href="/hzwhardware/hardware-introduce/" >选购产品</a>
+            </li><li class="masthead__menu-item">
+              <a href="/hzwservice/service-introduce/" >服务保障</a>
+            </li><li class="masthead__menu-item">
+              <a href="/hzwsoftware/yitiji-introduce/" >使用手册与软件教程</a>
+            </li><li class="masthead__menu-item">
+              <a href="/hzwconfig/config-introduce/" >软件安装</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">切换菜单</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">快速使用手册</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/yitiji-introduce/#%E8%BD%AF%E7%A1%AC%E4%BB%B6%E5%B9%B3%E5%8F%B0%E7%AE%80%E4%BB%8B" class="">软硬件平台简介</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/centos-introduce/" class="active">操作系统使用简介</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/environment-introduce/" class="">计算模拟环境使用简介</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/frequently-asked-question/" class="">常见问题</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">软件教程与案例</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/device-studio-introduce/" class="">Device Studio简介</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/device-studio-quick-guide/" class="">Device Studio快速使用手册</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title"></span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/rescu-manual/" class="">RESCU教程</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/rescu-examples/" class="">RESCU案例</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title"></span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/nanodcal-manual/" class="">Nanodcal教程</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/nanodcal-examples/" class="">Nanodcal案例</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title"></span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/first-manual/" class="">FIRST教程</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/first-examples/" class="">FIRST案例</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title"></span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/momap-manual/" class="">MOMAP教程</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/hzwsoftware/momap-examples/" class="">MOMAP案例</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="CentOS 操作系统使用简介">
+    <meta itemprop="description" content="CentOS 操作系统使用简介">
+    
+    <meta itemprop="dateModified" content="April 18, 2019">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">CentOS 操作系统使用简介
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 在本页上</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#开始使用">开始使用</a>
+    <ul>
+      <li><a href="#进入桌面">进入桌面</a></li>
+      <li><a href="#文件管理文本编辑">文件管理&amp;文本编辑</a></li>
+      <li><a href="#命令行终端常用命令">命令行终端&amp;常用命令</a>
+        <ul>
+          <li><a href="#文件和目录操作">文件和目录操作</a></li>
+          <li><a href="#文本查看与编辑">文本查看与编辑</a></li>
+          <li><a href="#文件执行与查找">文件执行与查找</a></li>
+          <li><a href="#网络配置与服务">网络配置与服务</a></li>
+          <li><a href="#系统信息和管理">系统信息和管理</a></li>
+          <li><a href="#磁盘空间文件夹大小查看">磁盘空间、文件夹大小查看</a></li>
+          <li><a href="#软件包安装和升级">软件包安装和升级</a></li>
+          <li><a href="#torque-pbs任务管理命令">Torque pbs任务管理命令</a></li>
+        </ul>
+      </li>
+      <li><a href="#远程登录">远程登录</a>
+        <ul>
+          <li><a href="#从linux设备远程登陆到鸿之微一体机">从Linux设备远程登陆到鸿之微“一体机”</a></li>
+          <li><a href="#从windows设备远程登陆到鸿之微一体机">从Windows设备远程登陆到鸿之微“一体机”</a></li>
+        </ul>
+      </li>
+      <li><a href="#vim文本编辑器">Vim文本编辑器</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>  CentOS（Community Enterprise Operating System，中文意思是社区企业操作系统）是Linux发行版之一，CentOS是一个基于Red Hat Linux提供的可自由使用源代码的企业级Linux发行版本，而且在RHEL的基础上修正了不少已知的Bug，相对于其他Linux发行版，其稳定性值得信赖。</p>
+
+<h2 id="开始使用">开始使用</h2>
+
+<p>  我们在安装操作系统时，桌面环境在预装的<code class="highlighter-rouge">GNOME</code>、<code class="highlighter-rouge">KDE</code>之外，还为您定制了<code class="highlighter-rouge">Cinnamon</code>桌面环境，<code class="highlighter-rouge">Cinnamon</code>桌面具有接近<code class="highlighter-rouge">Windows</code>操作习惯等优点，帮您在初次接触<code class="highlighter-rouge">Linux</code>系统桌面计算时获得最优良的用户体验。您可以根据自己的使用习惯选择喜欢或习惯的桌面。</p>
+
+<h3 id="进入桌面">进入桌面</h3>
+
+<p>  当您正常开机点亮鸿之微“一体机”后，您可按下图中操作流程进入桌面，需要操作处参见图中白色箭头。</p>
+
+<figure class="third ">
+  
+    
+      <a href="/assets/images/yitiji-introduce/yitiji-desktop-0.png" title="点击账户名`hzwtech`">
+        <img src="/assets/images/yitiji-introduce/yitiji-desktop-0.png" alt="点击账户名`hzwtech`" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/yitiji-introduce/yitiji-desktop-1.png" title="选择`Cinnamon`桌面">
+        <img src="/assets/images/yitiji-introduce/yitiji-desktop-1.png" alt="选择`Cinnamon`桌面" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/yitiji-introduce/yitiji-desktop-2.png" title="输入密码、点击`Sigh in`登陆系统">
+        <img src="/assets/images/yitiji-introduce/yitiji-desktop-2.png" alt="输入密码、点击`Sigh in`登陆系统" />
+      </a>
+    
+  
+  
+    <figcaption>点击账户名<code class="highlighter-rouge">hzwtech</code>，选择桌面（图中以<code class="highlighter-rouge">Cinnamon</code>为例），输入密码<code class="highlighter-rouge">hzw@123</code>、点击<code class="highlighter-rouge">Sigh in</code>登陆系统
+</figcaption>
+  
+</figure>
+
+<p>  进入桌面后，可以看到如下图所示桌面，下文中以<code class="highlighter-rouge">Cinnamon</code>桌面为例。<code class="highlighter-rouge">Cinnamon</code>桌面与<code class="highlighter-rouge">Windows</code>桌面很多相似之处，例如，底部有一个类似任务栏的面板。操作习惯也与<code class="highlighter-rouge">Windows</code>操作习惯接近。下面介绍<code class="highlighter-rouge">CentOS</code>最重要的几样功能组件，更详细的使用方法您可以在互联网上直接搜索相关信息，<code class="highlighter-rouge">GNOME</code>、<code class="highlighter-rouge">KDE</code>桌面的使用方法也基本类似。</p>
+
+<figure class="half ">
+  
+    
+      <a href="/assets/images/yitiji-introduce/yitiji-desktop-3.png" title="鸿之微“一体机”桌面示意图">
+        <img src="/assets/images/yitiji-introduce/yitiji-desktop-3.png" alt="鸿之微“一体机”桌面示意图" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/yitiji-introduce/yitiji-desktop-4.png" title="鸿之微“一体机”桌面示意图">
+        <img src="/assets/images/yitiji-introduce/yitiji-desktop-4.png" alt="鸿之微“一体机”桌面示意图" />
+      </a>
+    
+  
+  
+    <figcaption>鸿之微“一体机”桌面示意图
+</figcaption>
+  
+</figure>
+
+<p>  鼠标点击屏幕左下角的<code class="highlighter-rouge">Menu</code>图标可以显示开始菜单，这与<code class="highlighter-rouge">Windows</code>的<code class="highlighter-rouge">开始</code>菜单类似，随系统预装的应用软件都可以找到相应的快捷方式，点击即可开始使用。任务栏右下角分别有<code class="highlighter-rouge">语言</code>、<code class="highlighter-rouge">账户</code>、<code class="highlighter-rouge">网络</code>等设置，点击可以进行设置，通常情况不建议您将系统语言设置为<code class="highlighter-rouge">中文</code>，因为这会给后续操作，如使用<code class="highlighter-rouge">cd</code>命令切换路径等操作时带来一些麻烦，如果您为了更快的熟悉操作系统，也可以将系统语言设置为<code class="highlighter-rouge">中文</code>。</p>
+
+<h3 id="文件管理文本编辑">文件管理&amp;文本编辑</h3>
+<p>  <code class="highlighter-rouge">Cinnamon</code>桌面中文件管理&amp;文本编辑使用方式与<code class="highlighter-rouge">Windows</code>中资源管理器类似，左键双击桌面<code class="highlighter-rouge">pbs_scripts_example</code>文件夹图标，可以打开此文件夹如下图所示。</p>
+
+<figure class=" ">
+  
+    
+      <a href="/assets/images/yitiji-introduce/yitiji-desktop-5.png" title="文件管理&amp;文本编辑">
+        <img src="/assets/images/yitiji-introduce/yitiji-desktop-5.png" alt="文件管理&amp;文本编辑" />
+      </a>
+    
+  
+  
+    <figcaption>文件管理&amp;文本编辑
+</figcaption>
+  
+</figure>
+
+<p>  继续左键双击<code class="highlighter-rouge">pbs_scripts_example</code>文件夹中文本文件<code class="highlighter-rouge">rescu.pbs</code>图标，系统会默认使用文本编辑器<code class="highlighter-rouge">gedit</code>打开此文件。<code class="highlighter-rouge">gedit</code>文本编辑器是纯文本编辑器，类似于<code class="highlighter-rouge">Windows</code>的记事本，可以用来编辑各计算软件的输入文件，查看输出文件等。如果发现图标右下角有小锁图标，这是由于您当前使用的账户没有修改此文件的权限，您只能查看此文件不能修改。</p>
+
+<p class="notice--info">注：关于<code class="highlighter-rouge">Linux</code>文件权限，您有必要在互联网上了解更多，这是您以后进行科学计算中非常重要的操作基础。</p>
+
+<h3 id="命令行终端常用命令">命令行终端&amp;常用命令</h3>
+<p>  现代Linux发行版，我们可以通过图形界面完成大部分常规操作。但是<code class="highlighter-rouge">Linux</code>系统精髓和奥义集中于
+<strong><code class="highlighter-rouge">Terminal</code>命令行终端</strong>，通过<strong><code class="highlighter-rouge">Terminal</code>命令行终端</strong>才可以使用Linux操作系统的全部功能，同时还可以编写<strong><code class="highlighter-rouge">shell</code></strong>脚本实现各种自定义组合操作，完全释放<code class="highlighter-rouge">Linux</code>系统的强大潜能。</p>
+
+<p>  在后面空白处点击右键，打开菜单点击<code class="highlighter-rouge">Open in Terminal</code>，便可以打开<strong><code class="highlighter-rouge">Terminal</code>命令行终端</strong>。在<code class="highlighter-rouge">Terminal</code>命令行终端中，可以敲入命令，然后按键盘回车<code class="highlighter-rouge">Enter</code>执行。</p>
+
+<figure class=" ">
+  
+    
+      <a href="/assets/images/yitiji-introduce/yitiji-desktop-6.png" title="打开**`Terminal`命令行终端**">
+        <img src="/assets/images/yitiji-introduce/yitiji-desktop-6.png" alt="打开**`Terminal`命令行终端**" />
+      </a>
+    
+  
+  
+    <figcaption><strong><code class="highlighter-rouge">Terminal</code>命令行终端</strong>
+</figcaption>
+  
+</figure>
+
+<p>  Linux系统集成上千条命令，每条命令拥有许多不同的选项，以完成不同的功能。通常情况难以完全记住这些命令和他们的选项。在鸿之微“一体机”中我们精心制作了一张包含了<strong>80%</strong>常用操作命令的<strong>桌面壁纸</strong>，帮助您快速查找，在大部分情况下不需要上网查阅完成需要的操作。</p>
+
+<p class="notice--info">注：在下面我们列出来您需要掌握的最常用的命令。这些命令的帮助信息可以通过在命令后添加选项<code class="highlighter-rouge">--help</code>来查看，例如：输入<code class="highlighter-rouge">ls --help</code>就会显示<code class="highlighter-rouge">ls</code>命令的帮助信息。还有一种查看帮助的方法就是使用<code class="highlighter-rouge">man</code>命令，例如：输入<code class="highlighter-rouge">man ls</code>就会显示<code class="highlighter-rouge">ls</code>命令的帮助信息。</p>
+
+<h4 id="文件和目录操作">文件和目录操作</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> <span class="c"># 显示当前目录内容</span>
+ll <span class="c"># 以列表的方式显示文件信息，每个文件一行</span>
+<span class="nb">cd</span> /home <span class="c"># 进入'/home'目录</span>
+<span class="nb">cd</span> .. <span class="c"># 返回上一级目录</span>
+<span class="nb">cd</span> ~ <span class="c"># 进入用户的主目录</span>
+<span class="nb">cd</span> - <span class="c"># 返回上次所在的目录</span>
+<span class="nb">pwd</span> <span class="c"># 显示当前所在目录</span>
+<span class="nb">mkdir </span>dir1 <span class="c"># 在当前目录下创建'dir1'文件夹</span>
+<span class="nb">rm </span>file1 <span class="c"># 删除当前目录下'file1’文件</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> dir1 <span class="c"># 删除当前目录下'dir1'文件夹及其内文件</span>
+<span class="nb">cp </span>file1 file2 <span class="c"># 将file1文件复制为file2文件</span>
+<span class="nb">cp </span>dir1/<span class="k">*</span> <span class="nb">.</span> <span class="c"># 复制目录dir1下的所有文件到当前工作目录</span>
+<span class="nb">cp</span> <span class="nt">-r</span> dir1 dir2 <span class="c"># 复制目录dir1下文件到目录dir2</span>
+<span class="nb">mv </span>dir1 dir2 <span class="c"># 将目录'dir1'重命名为'dir2’</span>
+<span class="nb">mv </span>file1 file2 <span class="c"># 将目录'file1'重命名为'file2'</span>
+</code></pre></div></div>
+
+<h4 id="文本查看与编辑">文本查看与编辑</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi file1 <span class="c"># 使用vi编辑器编辑'file1'</span>
+<span class="nb">cat </span>file1 <span class="c"># 查看文本文件'file1’内容</span>
+<span class="nb">cat</span> <span class="nt">-n</span> file1 <span class="c"># 查看'file1'的内容并标示行数</span>
+<span class="nb">head</span> <span class="nt">-5</span> file1 <span class="c"># 查看'file1'的前五行</span>
+<span class="nb">tail</span> <span class="nt">-3</span> file1 <span class="c"># 查看'file1'的最后五行</span>
+less file1 <span class="c"># 查看一个长文本文件'file1’的内容</span>
+</code></pre></div></div>
+
+<h4 id="文件执行与查找">文件执行与查找</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x file1 <span class="c"># 给文件'file1'加上可执行权限</span>
+<span class="nb">source </span>file1 <span class="c"># 执行可执行文件'file1’</span>
+<span class="nb">chown </span>user1 file1 <span class="c"># 将文件'file1'的所有人属性改为'user1’</span>
+<span class="nb">chown</span> <span class="nt">-R</span> user1 dir1 <span class="c"># 将目录'dir1'及其目录下所有文件夹的所有人属性改为'user1’</span>
+<span class="nb">chown </span>user1:group1 file1 <span class="c">#改变文件'file1'的所有人和群组属性为为'user1'和'group1’</span>
+
+find / <span class="nt">-name</span> file1 <span class="c"># 从 /目录开始查找文件名为'file1'的文件和目录</span>
+whereis code1 <span class="c"># 显示'code1'二进制文件、源码或man的位置</span>
+which code1 <span class="c"># 显示'code1'二进制文件或可执行文件的完整路径 # 文件压缩和解压</span>
+<span class="nb">tar</span> <span class="nt">-zcvf</span> file1.tar.gz file1 <span class="c"># 把'file1'打包并压缩成'file1.tar.gz’文件</span>
+<span class="nb">tar</span> <span class="nt">-zxvf</span> file1.tar.gz <span class="c"># 解压并释放压缩包文件'file1.tar.gz'至当前目录</span>
+unzip file1.zip <span class="c"># 解压zip格式的压缩包'file1.zip'到当前目录</span>
+</code></pre></div></div>
+
+<h4 id="网络配置与服务">网络配置与服务</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh user1@node1 <span class="c"># 使用'user1'用户身份远程访问node1主机</span>
+ifconfig <span class="c"># 查看网络配置信息</span>
+ping www.baidu.com <span class="c"># 用来ping命令查看网络是否接通</span>
+service network restart <span class="c"># 重启网络服务</span>
+<span class="c"># 查看网卡配置文件信息，网卡名为'eth0’</span>
+<span class="nb">cat</span> /etc/sysconfig/network-scripts/ifcfg-eth0
+<span class="nb">cat</span> /etc/hosts <span class="c"># 查看主机名和IP的映射关系配置文件</span>
+</code></pre></div></div>
+<h4 id="系统信息和管理">系统信息和管理</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>top <span class="c"># 实时查看系统负载，输入q退出</span>
+free <span class="nt">-h</span> <span class="c"># 查看内存和使用情况</span>
+pstree <span class="c"># 以树状图显示程序</span>
+<span class="nb">date</span> <span class="c"># 显示系统日期</span>
+lscpu <span class="c"># 查看cpu的信息</span>
+<span class="nb">uname</span> <span class="nt">-a</span> <span class="c"># 查看内核信息</span>
+
+su - <span class="c"># 切换到root权限</span>
+shutdown <span class="nt">-h</span> now <span class="c"># 关机</span>
+reboot <span class="c"># 重启</span>
+<span class="nb">logout</span> <span class="c"># 注销</span>
+
+useradd user1 <span class="c"># 创建用户'user1’</span>
+userdel user1 <span class="c"># 删除用户'user1’</span>
+passwd <span class="c"># 修改用户密码</span>
+</code></pre></div></div>
+
+<h4 id="磁盘空间文件夹大小查看">磁盘空间、文件夹大小查看</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">df</span> <span class="nt">-h</span> <span class="c"># 查看已经挂载的分区磁盘列表和使用空间</span>
+<span class="nb">du</span> <span class="nt">-sh</span> <span class="k">*</span> <span class="c"># 查看当前目录下每个子文件夹占用磁盘空间</span>
+<span class="nb">du</span> <span class="nt">-sh</span> dir1 <span class="c"># 查看目录'dir1'占用磁盘空间</span>
+<span class="nb">cat</span> /etc/fstab <span class="c"># 查看分区挂载配置信息</span>
+lsblk <span class="c"># 查看磁盘块设备信息</span>
+</code></pre></div></div>
+
+<h4 id="软件包安装和升级">软件包安装和升级</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.bashrc <span class="c"># 编辑用户环境变量文件</span>
+<span class="nb">source</span> ~/.bashrc <span class="c"># 执行.bashrc配置文件</span>
+yum <span class="nb">install </span>package1 <span class="c"># 下载并安装一个软件包'package1’</span>
+rpm <span class="nt">-qa</span> | <span class="nb">grep </span>package1 <span class="c"># 查看是否装有'package1'软件包</span>
+</code></pre></div></div>
+
+<h4 id="torque-pbs任务管理命令">Torque pbs任务管理命令</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 鸿之微“一体机”软件PBS脚本文件路径</span>
+<span class="nb">cd</span> /public/pbs_script_example
+
+qsub jobfile1 <span class="c"># 提交任务文件'jobfile1'</span>
+qdel id1 <span class="c"># 删除Job ID为'id1'的计算任务</span>
+qstat <span class="c"># 查看当前已提交任务计算状态</span>
+qnodes <span class="c"># 查看各计算节点硬件状态</span>
+</code></pre></div></div>
+
+<h3 id="远程登录">远程登录</h3>
+<p>  鸿之微“一体机”连接到互联网后，您还可以远程登录鸿之微“一体机”。远程登录时，需要提前知道鸿之微“一体机”的网络<code class="highlighter-rouge">ip</code>地址（<code class="highlighter-rouge">ip</code>地址可以通过在终端中输入<code class="highlighter-rouge">ifconfig</code>命令来获得）。</p>
+
+<p class="notice--warning">如果您登陆的设备（例如您使用<code class="highlighter-rouge">Windows</code>办公电脑进行远程登陆）跟鸿之微“一体机”处于同一<strong>局域网</strong>内，您可以使用鸿之微“一体机”的局域网<code class="highlighter-rouge">ip</code>登陆。否则，您需要为鸿之微“一体机”配置<strong>公网ip</strong>。</p>
+
+<h4 id="从linux设备远程登陆到鸿之微一体机">从Linux设备远程登陆到鸿之微“一体机”</h4>
+<p>  如果您在另外一台linux机器上登录鸿之微“一体机”，直接在终端中使用<code class="highlighter-rouge">ssh</code>命令加上用户名和网络地址即可。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh hzwtech@192.168.1.100 <span class="c">#其中192.168.1.100为鸿之微“一体机”网络地址，需要根据实际情况调整</span>
+</code></pre></div></div>
+
+<h4 id="从windows设备远程登陆到鸿之微一体机">从Windows设备远程登陆到鸿之微“一体机”</h4>
+<p>  如果您在<code class="highlighter-rouge">Windows</code>机器上登录鸿之微“一体机”（如您的办公电脑，这也是最常见的情况），您需要使用支持<code class="highlighter-rouge">ssh</code>的软件，推荐您使用<code class="highlighter-rouge">XShell</code>或<code class="highlighter-rouge">MobaXterm</code>。如果需要跟鸿之微“一体机”进行文件传输，需要使用支持scp的软件，最常用的免费软件就是<code class="highlighter-rouge">WinSCP</code>。您也可以根据自己的使用习惯选择。这些软件使用中均需要提前知道鸿之微“一体机”的网络<code class="highlighter-rouge">ip</code>地址</p>
+<ul>
+  <li><a href="https://www.netsarang.com/zh/xshell/">XShell</a>（官网可注册家庭/教育免费版）</li>
+  <li><a href="https://moba.en.softonic.com/">MobaXterm</a> （官方免费）</li>
+  <li><a href="https://winscp.net/eng/docs/lang:chs">WinSCP</a> （官方免费）</li>
+</ul>
+
+<figure class=" ">
+  
+    
+      <a href="/assets/images/yitiji-introduce/yitiji-desktop-7.gif" title="使用`WinSCP`和`XShell`软件，从Windows设备远程登陆到鸿之微“一体机”">
+        <img src="/assets/images/yitiji-introduce/yitiji-desktop-7.gif" alt="使用`WinSCP`和`XShell`软件，从Windows设备远程登陆到鸿之微“一体机”" />
+      </a>
+    
+  
+  
+    <figcaption>使用<code class="highlighter-rouge">WinSCP</code>和<code class="highlighter-rouge">XShell</code>软件，从Windows设备远程登陆到鸿之微“一体机”
+</figcaption>
+  
+</figure>
+
+<h3 id="vim文本编辑器">Vim文本编辑器</h3>
+<p>  在<strong>终端模式</strong>下，通常没有图形界面，如<code class="highlighter-rouge">gedit</code>等需要图形界面的文本编辑器会无法工作。如果在<strong>终端模式</strong>下需要进行文本编辑，需要使用特殊的文本编辑工具，其中<strong><code class="highlighter-rouge">Vim</code></strong>文本编辑器是最常用的编辑工具之一。</p>
+
+<p>  此处仅是浅显地描述最常用的功能，更多信息请上网查阅<strong><code class="highlighter-rouge">Vim</code></strong>文本编辑器的使用方法。Vim分成<strong>命令模式</strong>，<strong>插入模式</strong>和<strong>替换模式</strong>。</p>
+
+<p>  <strong>插入模式</strong>和<strong>替换模式</strong>跟其它的文本编辑器类似，<strong>命令模式</strong>是Vim特有的。Vim启动以后就进入<strong>命令模式</strong>，可以使用<strong>h(左)</strong> <strong>j(下)</strong> <strong>k(上)</strong> <strong>l(右)</strong>键进行光标移动。在命令模式中输入<strong><code class="highlighter-rouge">i</code></strong>进入插入模式，<strong>插入模式</strong>和<strong>替换模式</strong>可以通过插入键来切换。在<strong>插入模式</strong>和<strong>替换模式</strong>中，我们可以对文件内容进行相应的修改，修改完成以后可以按<code class="highlighter-rouge">Esc</code>键可以退回到<strong>命令模式</strong>。<code class="highlighter-rouge">Vim</code>中集成了许多操作命令，下面介绍其中最常用的一些命令。</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:q — 退出Vim
+:q! — 退出Vim，忽略对文本的编辑
+:w — 把文本文件保存
+:wq — 把文本文件保存，并退出Vim
+gg — 到文件头部
+G — 到文件尾部
+11G — 跳转到11行，数字可以变化，例如123G就是跳转到123行
+x — 删除当前光标所在的字符
+<span class="nb">dd</span> — 删除当前光标所在的行
+yy — 复制当前光标所在的行
+p — 粘贴被删除或者复制的文本
+u — 回复上一个操作
+CTRL-r — 重做上次撤销的操作
+</code></pre></div></div>
+
+<p>  <a href="/hzwsoftware/environment-introduce/" class="btn btn--success"><i class="far fa-file-alt"></i> 继续学习鸿之微“一体机”教程-计算模拟环境使用简介</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time datetime="2019-04-18">April 18, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">向前</a>
+    
+    
+      <a href="/hzwsoftware/device-studio-introduce/" class="pagination--pager" title="Device Studio介绍
+">向后</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="输入您要搜索的关键词..." class="search-input" tabindex="-1" placeholder="输入您要搜索的关键词..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 鸿之微一体机. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
