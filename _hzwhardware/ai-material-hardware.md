@@ -13,8 +13,8 @@ gallery:
 
 ## 可选硬件方案
 &emsp;&emsp;鸿之微-机器学习材料设计一体机根据根据软件的计算特性，建议您选择：
+- [最强算力](/hzwhardware/hardware-2cpu-4gpu/){: .btn .btn--danger}：**双路CPU + 四路GPU**配置方案
 - [进阶算力](/hzwhardware/hardware-2cpu-2gpu/){: .btn .btn--warning}：**双路CPU + 双路GPU**配置方案
-- [均衡算力](/hzwhardware/hardware-2cpu/){: .btn .btn--success}：**双路CPU**配置方案
 
 ---
 
