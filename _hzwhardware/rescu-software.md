@@ -22,7 +22,7 @@ gallery:
 
 {% include gallery id="gallery" caption="RESCU主要功能" %}
 
-&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/2d-material-hardware/){: .btn .btn--success .btn--large}
+&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/rescu-hardware/){: .btn .btn--success .btn--large}
 {: .text-right}
 
 ## 理论计算和软件特点

@@ -19,7 +19,7 @@ gallery:
 
 {% include gallery id="gallery" caption="Nanodcal主要功能" %}
 
-&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/2d-material-hardware/){: .btn .btn--success .btn--large}
+&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/nanodcal-hardware/){: .btn .btn--success .btn--large}
 {: .text-right}
 
 ## 经典应用

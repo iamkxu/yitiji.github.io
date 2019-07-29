@@ -25,12 +25,12 @@ gallery:
 | 配置 | 型号 | 参数 | 数量 |
 | :---: | :---: | :---: | :---: |
 | 处理器 | [至强 金牌 6140 (2片)](https://ark.intel.com/content/www/cn/zh/ark/products/120485/intel-xeon-gold-6140-processor-24-75m-cache-2-30-ghz.html) | 2.3G 18核36线程  | 2 |
-| 主板 | [技嘉C621-SD8服务器主板带集显](http://www.gigabyte.cn/FileUpload/CN/KeyFeature/1076/index.html) | CEB版型 | 1 |
+| 主板 | C621服务器主板带集显 | CEB版型 | 1 |
 | 内存 | 256G (32G*8, 最大支持1T) | 2666 MHz Reg.ecc | 8 |
 | SSD | 西数黑盘 SN750 500G | M.2/NVME | 1 |
 | HDD | ST 4T（2T*2） 企业级机械盘 | SATA | 2 |
 | 电源 |  钛金级电源 | 1000W  | 1 |
-| 机箱 | 鸿之微定制专业机箱 | 静音机箱 | 1 |
+| 机箱 | 定制专业机箱 | 静音机箱 | 1 |
 | 产品型号 |  自组装 |   | **hzw55jhsl**  |
 
 ---
@@ -47,12 +47,12 @@ gallery:
 | 配置 | 型号 | 参数 | 数量 |
 | :---: | :---: | :---: | :---: |
 | 处理器 | [至强 银牌 4116 (2片)](https://ark.intel.com/content/www/cn/zh/ark/products/120481/intel-xeon-silver-4116-processor-16-5m-cache-2-10-ghz.html) | 2.1G 12核24线程  | 2 |
-| 主板 | [技嘉C621-SD8服务器主板带集显](http://www.gigabyte.cn/FileUpload/CN/KeyFeature/1076/index.html) | CEB版型 | 1 |
+| 主板 | C621服务器主板带集显 | CEB版型 | 1 |
 | 内存 | 256G (32G*8, 最大支持1T) | 2666 MHz Reg.ecc | 8 |
 | SSD | 西数黑盘 SN750 500G | M.2/NVME | 1 |
 | HDD | ST 4T（2T*2） 企业级机械盘 | SATA | 2 |
 | 电源 |  钛金级电源 | 1000W  | 1 |
-| 机箱 | 鸿之微定制专业机箱 | 静音机箱 | 1 |
+| 机箱 | 定制专业机箱 | 静音机箱 | 1 |
 | 产品型号 |  自组装 |   | **hzw35jhsl**  |
 
 ---
