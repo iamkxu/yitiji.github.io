@@ -50,7 +50,7 @@ var store = [{
         "url": "http://localhost:4000/hzwhardware/2d-material-software/",
         "teaser":null},{
         "title": "鸿之微-机器学习材料设计一体机",
-        "excerpt":"可选硬件方案    鸿之微-机器学习材料设计一体机根据根据软件的计算特性，建议您选择：     进阶算力：双路CPU + 双路GPU配置方案   均衡算力：双路CPU配置方案        联系购买   鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！  ","categories": [],
+        "excerpt":"可选硬件方案    鸿之微-机器学习材料设计一体机根据根据软件的计算特性，建议您选择：     最强算力：双路CPU + 四路GPU配置方案   进阶算力：双路CPU + 双路GPU配置方案        联系购买   鸿之微一体机线上销售渠道正在建设中，敬请您联系公司销售人员进行进一步沟通！  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hzwhardware/ai-material-hardware/",
         "teaser":null},{
