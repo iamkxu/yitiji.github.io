@@ -14,6 +14,11 @@ gallery:
 
 &emsp;&emsp;鸿之微大体系KS-DFT计算一体机是鸿之微开发的一款搭载RESCU计算软件的科学模拟平台。
 
+---
+
+&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/rescu-hardware/){: .btn .btn--success .btn--large}
+{: .text-right}
+
 &emsp;&emsp;RESCU是一款仅仅用小型计算机就能研究超大体系的KS-DFT计算软件。 RESCU是Real space Electronic Structure CalcUlator（实空间电子结构计算程序）的缩写，它的核心是一种全新、极其强大、并行效率超高的KS-DFT自洽计算方法。
 
 &emsp;&emsp;RESCU可以使用一体机种有限的计算机资源，并且还可以使用GPU进行加速计算，来计算包含一千、数千、上万体系的电子结构性质。RESCU是解决超大体系KS-DFT问题的里程碑式的新方法，正在被应用于金属、半导体、绝缘体、液体、DNA、1维、2维、3维、表面、分子、磁性、非磁性、杂质、固体等等不同系统的KS-DFT计算。
@@ -21,9 +26,6 @@ gallery:
 ## 主要功能
 
 {% include gallery id="gallery" caption="RESCU主要功能" %}
-
-&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/rescu-hardware/){: .btn .btn--success .btn--large}
-{: .text-right}
 
 ## 理论计算和软件特点
 

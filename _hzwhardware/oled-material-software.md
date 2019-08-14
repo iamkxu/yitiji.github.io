@@ -28,12 +28,14 @@ gallery2:
 
 {% include gallery id="gallery" caption="MOMAP部分应用示意图" %}
 
-&emsp;&emsp;MOMAP(Molecular Materials Property Prediction Package)是一款研究和设计有机分子材料发光和传输机理以及定量预测发光效率的软件。<sup>[1-3]</sup> 目前广泛应用于OLED发光和传输机理研究、新型OLED设计以及有机显示与照明材料、有机场效应材料、有机太阳能电池、以及有机光检测、生物传感、有机光通讯等领域。
-
-{% include gallery id="gallery2" caption="研发及技术支撑团队" %}
+---
 
 &emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/oled-material-hardware/){: .btn .btn--success .btn--large}
 {: .text-right}
+
+&emsp;&emsp;MOMAP(Molecular Materials Property Prediction Package)是一款研究和设计有机分子材料发光和传输机理以及定量预测发光效率的软件。<sup>[1-3]</sup> 目前广泛应用于OLED发光和传输机理研究、新型OLED设计以及有机显示与照明材料、有机场效应材料、有机太阳能电池、以及有机光检测、生物传感、有机光通讯等领域。
+
+{% include gallery id="gallery2" caption="研发及技术支撑团队" %}
 
 ## 理论贡献和软件特点
 

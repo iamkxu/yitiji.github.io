@@ -43,10 +43,10 @@ last_modified_at: 2019-04-18T15:53:52-04:00
 
 ### 可选一体机硬件方案
 
-&emsp;&emsp;鸿之微“一体机”硬件方案主要根据CPU和GPU需求情况定为三种搭配，六种方案：
+&emsp;&emsp;鸿之微“一体机”硬件方案主要根据CPU和GPU需求情况定为三种搭配方案：
 
-- 最强算力2+4方案：[1.双路金牌CPU + 四路GPU](/hzwhardware/hardware-2cpu-4gpu/){: .btn .btn--danger}&emsp;&emsp;[2.双路银牌CPU + 四路GPU](/hzwhardware/hardware-2cpu-4gpu/#2双路至强银牌cpu--四路-rtx-2080-ti-gpu方案){: .btn .btn--danger}
-- 进阶算力2+2方案：[3.双路金牌CPU + 双路GPU](/hzwhardware/hardware-2cpu-2gpu/){: .btn .btn--warning}&emsp;&emsp;[4.双路银牌CPU + 双路GPU](/hzwhardware/hardware-2cpu-2gpu/#4双路至强银牌cpu--双路-rtx-2080-ti-gpu方案){: .btn .btn--warning}
-- 均衡算力2+0方案：[5.双路金牌CPU&emsp;&emsp;&emsp;&emsp;&emsp;](/hzwhardware/hardware-2cpu/){: .btn .btn--success}&emsp;&emsp;[6.双路银牌CPU&emsp;&emsp;&emsp;&emsp;&emsp;](/hzwhardware/hardware-2cpu/#6双路至强银牌cpu方案){: .btn .btn--success}
+- 最强算力 2+4 方案：[双路 Intel® 金牌 CPU + 四路 NVIDIA® 2080Ti GPU](/hzwhardware/hardware-2cpu-4gpu/){: .btn .btn--danger}
+- 进阶算力 2+2 方案：[双路 Intel® 银牌 CPU + 双路 NVIDIA® 2080Ti GPU](/hzwhardware/hardware-2cpu-2gpu/){: .btn .btn--warning}
+- 均衡算力 2+0 方案：[双路 Intel® 银牌 CPU &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;](/hzwhardware/hardware-2cpu/){: .btn .btn--success}
 
 &emsp;&emsp;当您根据自己的实际需求选择好软件和硬件方案后，请您联系我们的销售人员，我们会进一步为您提供购买服务和选择建议。

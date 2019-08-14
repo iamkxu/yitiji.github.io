@@ -18,7 +18,7 @@ gallery:
 
 ## 此产品正在开发中，敬请期待...
 
-&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/battery-material-hardware/){: .btn .btn--success .btn--large}
+&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](){: .btn .btn--success .btn--large}
 {: .text-right}
 
 ---

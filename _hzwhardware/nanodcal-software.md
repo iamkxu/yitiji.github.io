@@ -13,14 +13,16 @@ gallery:
 
 &emsp;&emsp;鸿之微量子输运计算一体机是鸿之微开发的一款搭载Nanodcal计算软件的科学模拟平台。
 
+---
+
+&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/nanodcal-hardware/){: .btn .btn--success .btn--large}
+{: .text-right}
+
 &emsp;&emsp;Nanodcal是基于NEGF-DFT的材料计算和电子器件量子输运模拟的通用大型计算软件程序包，主要用于模拟器件材料中的非线性、非平衡的量子输运过程，是目前最先进的基于第一性原理的输运软件。Nanodcal可以用于材料物性、分子电子学、自旋电子学、光电流、半导体电子学器件设计等方面的研究工作。
 
 ## 主要功能
 
 {% include gallery id="gallery" caption="Nanodcal主要功能" %}
-
-&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/nanodcal-hardware/){: .btn .btn--success .btn--large}
-{: .text-right}
 
 ## 经典应用
 - ### 场效应晶体管器件设计

@@ -27,14 +27,16 @@ gallery3:
 
 &emsp;&emsp;鸿之微-机器学习材料设计一体机搭载了鸿之微FIRST材料信息学虚拟筛选软件，采用人工智能的方式对海量材料进行快速筛选。
 
+---
+
+&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/ai-material-hardware/){: .btn .btn--success .btn--large}
+{: .text-right}
+
 ## 主要功能
 
 &emsp;&emsp;新材料的设计和发现，通常需要研究人员在候选材料中筛选排除性能不达标的材料，手段包括实验，计算仿真等等。受到实验或仿真的时间或成本的制约，研究人员只能在很有限的范围内筛选合适的材料。
 
 &emsp;&emsp;FIRST(Fast vIRtual Screening Tool 快速筛选工具)一体机针对材料筛选的应用场景，提供了完善先进的解决方案，实现低成本高效率超大范围筛选材料，助力新材料的快速精准研发。适用范围包括有机光电材料，热电材料，二维材料，锂电池电极/电解质材料等等。
-
-&emsp;&emsp;&emsp;[<i class="fas fa-shopping-cart"></i> 选择硬件](/hzwhardware/ai-material-hardware/){: .btn .btn--success .btn--large}
-{: .text-right}
 
 ### FIRST筛选流程
 
