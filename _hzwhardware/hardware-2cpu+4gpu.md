@@ -2,7 +2,7 @@
 title: "最强算力 2+4 方案"
 permalink: /hzwhardware/hardware-2cpu-4gpu/
 excerpt: "最强算力方案"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 gallery:
   - url: /assets/images/hardware-image/gpu-4-1.png
@@ -15,7 +15,7 @@ gallery:
     title: "RTX 2080 Ti显卡示意图"
 ---
 
-&emsp;&emsp;鸿之微“一体机” - **最强算力2+4方案** 硬件选用 **双路** 最新第二代智能英特尔® 至强® 可扩展处理器，具有多核、性能优越、能耗低、低发热等优点。同时选用**四路**最新Turing（图灵）架构NVIDIA® 旗舰GPU，可显著加快科学、分析、工程、消费和企业应用程序的运行速度。
+&emsp;&emsp;鸿之微一体机 - **最强算力2+4方案** 硬件选用 **双路** 最新第二代智能英特尔® 至强® 可扩展处理器，具有多核、性能优越、能耗低、低发热等优点。同时选用**四路**最新Turing（图灵）架构NVIDIA® 旗舰GPU，可显著加快科学、分析、工程、消费和企业应用程序的运行速度。
 
 &emsp;&emsp;**最强算力2+4方案**适用于重度需要GPU加速计算场景，鸿之微定制一体机推荐配置如下：
 

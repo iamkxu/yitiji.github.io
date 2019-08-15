@@ -2,7 +2,7 @@
 title: "鸿之微-大体系KS-DFT计算一体机"
 permalink: /hzwhardware/rescu-hardware/
 excerpt: "鸿之微-大体系KS-DFT计算一体机"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 gallery:
   - url: /assets/images/hardware-image/gpu-2-1.png

@@ -2,7 +2,7 @@
 title: "Nanodcal软件使用教程"
 permalink: /hzwsoftware/nanodcal-manual/
 excerpt: "Nanodcal软件使用教程"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 ---
 
@@ -14,7 +14,7 @@ toc: true
 
 ## Nanodcal安装环境
 
-&emsp;&emsp;鸿之微Nanodcal“一体机”已经预装Nanodcal，用户不需要自行安装，可以直接调用。Nanodcal预装在`/software/Nanodcal`目录中，其中包含了Nanodcal的程序、文档和实例。下面将根据案例，介绍如何运行Nanodcal软件。
+&emsp;&emsp;鸿之微Nanodcal一体机已经预装Nanodcal，用户不需要自行安装，可以直接调用。Nanodcal预装在`/software/Nanodcal`目录中，其中包含了Nanodcal的程序、文档和实例。下面将根据案例，介绍如何运行Nanodcal软件。
 
 &emsp;&emsp;在该目录下我们还安装了一些运行Nanodcal所需要的软件，如MATLAB、OPENMPI等。Nanodcal是基于Matlab语言开发，数据密集部分采用C语言，Matlab-C组合保证了Nanodcal计算效率，是目前为止最为高效的LCAO代码。故而编译安装Nanodcal之前需提前安装Matlab软件和对应的C编译器。为了满足库函数编译的要求，还需要安装Openmpi并行环境来提高并行的效率。
 

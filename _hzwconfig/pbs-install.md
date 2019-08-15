@@ -2,12 +2,12 @@
 title: "任务管理Torque PBS安装"
 permalink: /hzwconfig/pbs-install/
 excerpt: "任务管理Torque PBS安装"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 ---
 ## Torque PBS自动安装脚本
 
-&emsp;&emsp;本页中为您提供了任务管理Torque PBS自动安装脚本，您可以直接将下文中脚本内容复制后使用，然后使用`chmod +x`命令添加可执行权限，执行即可完成在鸿之微“一体机”上自动安装Torque PBS。
+&emsp;&emsp;本页中为您提供了任务管理Torque PBS自动安装脚本，您可以直接将下文中脚本内容复制后使用，然后使用`chmod +x`命令添加可执行权限，执行即可完成在鸿之微一体机上自动安装Torque PBS。
 
 ```sh
 # ---------- install torque pbs ---------- #

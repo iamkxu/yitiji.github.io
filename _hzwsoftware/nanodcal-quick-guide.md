@@ -2,11 +2,11 @@
 title: "Nanodcal快速使用手册"
 permalink: /hzwsoftware/nanodcal-quick-guide/
 excerpt: "Nanodcal快速使用手册"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 ---
 
-&emsp;&emsp;鸿之微Nanodcal“一体机”已经预装Nanodcal，用户不需要自行安装，可以直接调用。Nanodcal预装在`/software/Nanodcal`目录中，其中包含了Nanodcal的程序、文档和实例。
+&emsp;&emsp;鸿之微Nanodcal一体机已经预装Nanodcal，用户不需要自行安装，可以直接调用。Nanodcal预装在`/software/Nanodcal`目录中，其中包含了Nanodcal的程序、文档和实例。
 
 &emsp;&emsp;Nanodcal的作业递交脚本及需要加载的环境变量参见`/public/pbs_script_example`目录下的`nanodcal.pbs`文件。您可以将`nanodcal.pbs`文件，使用`cp`命令拷贝到您需要进行计算的目录，然后使用`qsub nanodcal.pbs`命令，提交任务，进行计算。您可以按照您的具体需求适当修改`nanodcal.pbs`文件的内容。
 

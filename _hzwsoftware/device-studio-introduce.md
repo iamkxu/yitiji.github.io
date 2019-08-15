@@ -2,7 +2,7 @@
 title: "Device Studio介绍"
 permalink: /hzwsoftware/device-studio-introduce/
 excerpt: "Device Studio介绍"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 ---
 
@@ -15,7 +15,7 @@ toc: true
 
 ## 开始使用Device Studio
 
-&emsp;&emsp;鸿之微“一体机”均已经预装Device Studio，用户不需要自行安装，可以直接调用。Device Studio安装在`/software/DeviceStudio/DeviceStudio`目录中，其中包含了Device Studio的程序、文档和实例。Device Studio的调用脚本`devicestudio.sh`放在`/software/DeviceStudio/DeviceStudio/bin`目录中。
+&emsp;&emsp;鸿之微一体机均已经预装Device Studio，用户不需要自行安装，可以直接调用。Device Studio安装在`/software/DeviceStudio/DeviceStudio`目录中，其中包含了Device Studio的程序、文档和实例。Device Studio的调用脚本`devicestudio.sh`放在`/software/DeviceStudio/DeviceStudio/bin`目录中。
 
 &emsp;&emsp;用户可以通过以下两种方式，开始使用Device Studio：
 1. 双击桌面`DeviceStudio`图标，即可开始使用

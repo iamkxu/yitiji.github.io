@@ -2,7 +2,7 @@
 title: "First快速使用手册"
 permalink: /hzwsoftware/first-quick-guide/
 excerpt: "First快速使用手册"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 redirect_from:
   - /theme-setup/
 toc: true

@@ -2,11 +2,11 @@
 title: "鸿之微文件服务一体机"
 permalink: /hzwhardware/hardware-fileserver-1/
 excerpt: "鸿之微硬件方案介绍"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 ---
 
-&emsp;&emsp;鸿之微“一体机”采用最新的Skylake架构V3 Intel® Xeon® GOLD处理器，具有多核、性能优越、能耗低、低发热等优点；同时选用最新Turing（图灵）架构NVIDIA® 旗舰GPU，可显著加快科学、分析、工程、消费和企业应用程序的运行速度。
+&emsp;&emsp;鸿之微一体机采用最新的Skylake架构V3 Intel® Xeon® GOLD处理器，具有多核、性能优越、能耗低、低发热等优点；同时选用最新Turing（图灵）架构NVIDIA® 旗舰GPU，可显著加快科学、分析、工程、消费和企业应用程序的运行速度。
 
 ## 24T文件存储服务器
 

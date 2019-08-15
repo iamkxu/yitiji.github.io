@@ -2,7 +2,7 @@
 title: "鸿之微-机器学习材料设计一体机"
 permalink: /hzwhardware/ai-material-software/
 excerpt: "鸿之微-机器学习材料设计一体机"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 gallery:
   - url: /assets/images/first-introduce/FIRST1.png

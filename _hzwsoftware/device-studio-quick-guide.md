@@ -2,11 +2,11 @@
 title: "Device Studio使用手册"
 permalink: /hzwsoftware/device-studio-quick-guide/
 excerpt: "Device Studio使用手册"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 ---
 
- &emsp;&emsp;Device Studio程序是基于QT的图形界面软件，所以必须通过图形界面才能使用。如果用户想要在“一体机””中使用Device Studio，建议直接在一体机中进行操作，尽量不要使用第三方中终端软件进行调用，如使用支持图形界面的第三方终端软件进行调用，Device Studio会出现卡顿，死机等现象。
+ &emsp;&emsp;Device Studio程序是基于QT的图形界面软件，所以必须通过图形界面才能使用。如果用户想要在一体机”中使用Device Studio，建议直接在一体机中进行操作，尽量不要使用第三方中终端软件进行调用，如使用支持图形界面的第三方终端软件进行调用，Device Studio会出现卡顿，死机等现象。
 
 ## 开始使用Device Studio
 

@@ -2,7 +2,7 @@
 title: "CentOS 操作系统使用简介"
 permalink: /hzwsoftware/centos-introduce/
 excerpt: "CentOS 操作系统使用简介"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 gallery:
   - url: /assets/images/yitiji-introduce/yitiji-desktop-0.png
@@ -20,12 +20,12 @@ gallery:
 gallery2:
   - url: /assets/images/yitiji-introduce/yitiji-desktop-3.png
     image_path: /assets/images/yitiji-introduce/yitiji-desktop-3.png
-    alt: "鸿之微“一体机”桌面示意图"
-    title: "鸿之微“一体机”桌面示意图"
+    alt: "鸿之微一体机桌面示意图"
+    title: "鸿之微一体机桌面示意图"
   - url: /assets/images/yitiji-introduce/yitiji-desktop-4.png
     image_path: /assets/images/yitiji-introduce/yitiji-desktop-4.png
-    alt: "鸿之微“一体机”桌面示意图"
-    title: "鸿之微“一体机”桌面示意图"
+    alt: "鸿之微一体机桌面示意图"
+    title: "鸿之微一体机桌面示意图"
 gallery3:
   - url: /assets/images/yitiji-introduce/yitiji-desktop-5.png
     image_path: /assets/images/yitiji-introduce/yitiji-desktop-5.png
@@ -39,8 +39,8 @@ gallery4:
 gallery5:
   - url: /assets/images/yitiji-introduce/yitiji-desktop-7.gif
     image_path: /assets/images/yitiji-introduce/yitiji-desktop-7.gif
-    alt: "使用`WinSCP`和`XShell`软件，从Windows设备远程登陆到鸿之微“一体机”"
-    title: "使用`WinSCP`和`XShell`软件，从Windows设备远程登陆到鸿之微“一体机”"
+    alt: "使用`WinSCP`和`XShell`软件，从Windows设备远程登陆到鸿之微一体机"
+    title: "使用`WinSCP`和`XShell`软件，从Windows设备远程登陆到鸿之微一体机"
 ---
 
 &emsp;&emsp;CentOS（Community Enterprise Operating System，中文意思是社区企业操作系统）是Linux发行版之一，CentOS是一个基于Red Hat Linux提供的可自由使用源代码的企业级Linux发行版本，而且在RHEL的基础上修正了不少已知的Bug，相对于其他Linux发行版，其稳定性值得信赖。
@@ -51,13 +51,13 @@ gallery5:
 
 ### 进入桌面
 
-&emsp;&emsp;当您正常开机点亮鸿之微“一体机”后，您可按下图中操作流程进入桌面，需要操作处参见图中白色箭头。
+&emsp;&emsp;当您正常开机点亮鸿之微一体机后，您可按下图中操作流程进入桌面，需要操作处参见图中白色箭头。
 
 {% include gallery caption="点击账户名`hzwtech`，选择桌面（图中以`Cinnamon`为例），输入密码`hzw@123`、点击`Sigh in`登陆系统" %}
 
 &emsp;&emsp;进入桌面后，可以看到如下图所示桌面，下文中以`Cinnamon`桌面为例。`Cinnamon`桌面与`Windows`桌面很多相似之处，例如，底部有一个类似任务栏的面板。操作习惯也与`Windows`操作习惯接近。下面介绍`CentOS`最重要的几样功能组件，更详细的使用方法您可以在互联网上直接搜索相关信息，`GNOME`、`KDE`桌面的使用方法也基本类似。
 
-{% include gallery id="gallery2" caption="鸿之微“一体机”桌面示意图" %}
+{% include gallery id="gallery2" caption="鸿之微一体机桌面示意图" %}
 
 &emsp;&emsp;鼠标点击屏幕左下角的`Menu`图标可以显示开始菜单，这与`Windows`的`开始`菜单类似，随系统预装的应用软件都可以找到相应的快捷方式，点击即可开始使用。任务栏右下角分别有`语言`、`账户`、`网络`等设置，点击可以进行设置，通常情况不建议您将系统语言设置为`中文`，因为这会给后续操作，如使用`cd`命令切换路径等操作时带来一些麻烦，如果您为了更快的熟悉操作系统，也可以将系统语言设置为`中文`。
 
@@ -79,7 +79,7 @@ gallery5:
 
 {% include gallery id="gallery4" caption="**`Terminal`命令行终端**" %}
 
-&emsp;&emsp;Linux系统集成上千条命令，每条命令拥有许多不同的选项，以完成不同的功能。通常情况难以完全记住这些命令和他们的选项。在鸿之微“一体机”中我们精心制作了一张包含了**80%**常用操作命令的**桌面壁纸**，帮助您快速查找，在大部分情况下不需要上网查阅完成需要的操作。
+&emsp;&emsp;Linux系统集成上千条命令，每条命令拥有许多不同的选项，以完成不同的功能。通常情况难以完全记住这些命令和他们的选项。在鸿之微一体机中我们精心制作了一张包含了**80%**常用操作命令的**桌面壁纸**，帮助您快速查找，在大部分情况下不需要上网查阅完成需要的操作。
 
 注：在下面我们列出来您需要掌握的最常用的命令。这些命令的帮助信息可以通过在命令后添加选项`--help`来查看，例如：输入`ls --help`就会显示`ls`命令的帮助信息。还有一种查看帮助的方法就是使用`man`命令，例如：输入`man ls`就会显示`ls`命令的帮助信息。
 {: .notice--info}
@@ -177,7 +177,7 @@ rpm -qa | grep package1 # 查看是否装有'package1'软件包
 
 #### Torque pbs任务管理命令
 ```shell
-# 鸿之微“一体机”软件PBS脚本文件路径
+# 鸿之微一体机软件PBS脚本文件路径
 cd /public/pbs_script_example
 
 qsub jobfile1 # 提交任务文件'jobfile1'
@@ -187,25 +187,25 @@ qnodes # 查看各计算节点硬件状态
 ```
 
 ### 远程登录
-&emsp;&emsp;鸿之微“一体机”连接到互联网后，您还可以远程登录鸿之微“一体机”。远程登录时，需要提前知道鸿之微“一体机”的网络`ip`地址（`ip`地址可以通过在终端中输入`ifconfig`命令来获得）。
+&emsp;&emsp;鸿之微一体机连接到互联网后，您还可以远程登录鸿之微一体机。远程登录时，需要提前知道鸿之微一体机的网络`ip`地址（`ip`地址可以通过在终端中输入`ifconfig`命令来获得）。
 
-如果您登陆的设备（例如您使用`Windows`办公电脑进行远程登陆）跟鸿之微“一体机”处于同一**局域网**内，您可以使用鸿之微“一体机”的局域网`ip`登陆。否则，您需要为鸿之微“一体机”配置**公网ip**。
+如果您登陆的设备（例如您使用`Windows`办公电脑进行远程登陆）跟鸿之微一体机处于同一**局域网**内，您可以使用鸿之微一体机的局域网`ip`登陆。否则，您需要为鸿之微一体机配置**公网ip**。
 {: .notice--warning}
 
-#### 从Linux设备远程登陆到鸿之微“一体机”
-&emsp;&emsp;如果您在另外一台linux机器上登录鸿之微“一体机”，直接在终端中使用`ssh`命令加上用户名和网络地址即可。
+#### 从Linux设备远程登陆到鸿之微一体机
+&emsp;&emsp;如果您在另外一台linux机器上登录鸿之微一体机，直接在终端中使用`ssh`命令加上用户名和网络地址即可。
 
 ```sh
-ssh hzwtech@192.168.1.100 #其中192.168.1.100为鸿之微“一体机”网络地址，需要根据实际情况调整
+ssh hzwtech@192.168.1.100 #其中192.168.1.100为鸿之微一体机网络地址，需要根据实际情况调整
 ```
 
-#### 从Windows设备远程登陆到鸿之微“一体机”
-&emsp;&emsp;如果您在`Windows`机器上登录鸿之微“一体机”（如您的办公电脑，这也是最常见的情况），您需要使用支持`ssh`的软件，推荐您使用`XShell`或`MobaXterm`。如果需要跟鸿之微“一体机”进行文件传输，需要使用支持scp的软件，最常用的免费软件就是`WinSCP`。您也可以根据自己的使用习惯选择。这些软件使用中均需要提前知道鸿之微“一体机”的网络`ip`地址
+#### 从Windows设备远程登陆到鸿之微一体机
+&emsp;&emsp;如果您在`Windows`机器上登录鸿之微一体机（如您的办公电脑，这也是最常见的情况），您需要使用支持`ssh`的软件，推荐您使用`XShell`或`MobaXterm`。如果需要跟鸿之微一体机进行文件传输，需要使用支持scp的软件，最常用的免费软件就是`WinSCP`。您也可以根据自己的使用习惯选择。这些软件使用中均需要提前知道鸿之微一体机的网络`ip`地址
 - [XShell](https://www.netsarang.com/zh/xshell/)（官网可注册家庭/教育免费版）
 - [MobaXterm](https://moba.en.softonic.com/) （官方免费）
 - [WinSCP](https://winscp.net/eng/docs/lang:chs) （官方免费）
 
-{% include gallery id="gallery5" caption="使用`WinSCP`和`XShell`软件，从Windows设备远程登陆到鸿之微“一体机”" %}
+{% include gallery id="gallery5" caption="使用`WinSCP`和`XShell`软件，从Windows设备远程登陆到鸿之微一体机" %}
 
 ### Vim文本编辑器
 &emsp;&emsp;在**终端模式**下，通常没有图形界面，如`gedit`等需要图形界面的文本编辑器会无法工作。如果在**终端模式**下需要进行文本编辑，需要使用特殊的文本编辑工具，其中**`Vim`**文本编辑器是最常用的编辑工具之一。
@@ -229,4 +229,4 @@ u — 回复上一个操作
 CTRL-r — 重做上次撤销的操作
 ```
 
-&emsp;&emsp;[<i class="far fa-file-alt"></i> 继续学习鸿之微“一体机”教程-计算模拟环境使用简介](/hzwsoftware/environment-introduce/){: .btn .btn--success }
+&emsp;&emsp;[<i class="far fa-file-alt"></i> 继续学习鸿之微一体机教程-计算模拟环境使用简介](/hzwsoftware/environment-introduce/){: .btn .btn--success }

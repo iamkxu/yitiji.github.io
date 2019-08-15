@@ -115,10 +115,6 @@ hzwconfig:
         url: /hzwconfig/first-install/
   - title: 其他常用软件
     children:
-      - title: "分子动力学-Lammps"
-        url: /hzwconfig/lammps-install/
-      - title: "第一性原理-VASP"
-        url: /hzwconfig/vasp-install/
       - title: "任务管理Torque PBS安装"
         url: /hzwconfig/pbs-install/
 

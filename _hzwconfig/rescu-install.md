@@ -2,13 +2,13 @@
 title: "RESCU安装教程"
 permalink: /hzwconfig/rescu-install/
 excerpt: "RESCU安装教程"
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 ---
 
 ## RESCU自动安装脚本
 
-&emsp;&emsp;本页中为您提供了RESCU自动安装脚本，您可以直接将下文中脚本内容复制后使用，然后使用`chmod +x`命令添加可执行权限，执行即可完成在鸿之微“一体机”上自动安装RESCU。
+&emsp;&emsp;本页中为您提供了RESCU自动安装脚本，您可以直接将下文中脚本内容复制后使用，然后使用`chmod +x`命令添加可执行权限，执行即可完成在鸿之微一体机上自动安装RESCU。
 
 ```sh
 #!/bin/bash
@@ -246,7 +246,7 @@ echo 'mcc verison rescu install finished' >> /public/system_config/rescu_install
 
 ## RESCU测试与提交pbs任务脚本
 
-&emsp;&emsp;下文中为您提供了RESCU测试与提交pbs任务脚本，您可以直接将下文中脚本内容复制后使用，然后使用`chmod +x`命令t添加可执行权限，执行即可完成在鸿之微“一体机”上自动RESCU测试与提交pbs任务脚本
+&emsp;&emsp;下文中为您提供了RESCU测试与提交pbs任务脚本，您可以直接将下文中脚本内容复制后使用，然后使用`chmod +x`命令t添加可执行权限，执行即可完成在鸿之微一体机上自动RESCU测试与提交pbs任务脚本
 
 ```sh
 #!/bin/bash
