@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>FIRST软件的使用介绍 - 鸿之微一体机</title>
-<meta name="description" content="FIRST软件的使用介绍">
+<!-- begin _includes/seo.html --><title>FIRST软件的使用教程 - 鸿之微一体机</title>
+<meta name="description" content="FIRST软件的使用教程">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:site_name" content="鸿之微一体机">
-<meta property="og:title" content="FIRST软件的使用介绍">
+<meta property="og:title" content="FIRST软件的使用教程">
 <meta property="og:url" content="http://localhost:4000/hzwsoftware/first-manual/">
 
 
-  <meta property="og:description" content="FIRST软件的使用介绍">
+  <meta property="og:description" content="FIRST软件的使用教程">
 
 
 
@@ -29,7 +29,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-08-15T14:53:18+08:00">
+  <meta property="article:published_time" content="2019-08-23T17:59:25+08:00">
 
 
 
@@ -369,15 +369,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="FIRST软件的使用介绍">
-    <meta itemprop="description" content="FIRST软件的使用介绍">
+    <meta itemprop="headline" content="FIRST软件的使用教程">
+    <meta itemprop="description" content="FIRST软件的使用教程">
     
     <meta itemprop="dateModified" content="August 18, 2019">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">FIRST软件的使用介绍
+          <h1 id="page-title" class="page__title" itemprop="headline">FIRST软件的使用教程
 </h1>
           
         </header>
@@ -388,12 +388,70 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 在本页上</h4></header>
-              
+              <ul class="toc__menu">
+  <li><a href="#first软件介绍">FIRST软件介绍</a></li>
+  <li><a href="#first安装">FIRST安装</a></li>
+  <li><a href="#first软件使用">FIRST软件使用</a>
+    <ul>
+      <li><a href="#1数据库筛选">1.数据库筛选</a></li>
+      <li><a href="#2导入样本材料">2.导入样本材料</a></li>
+      <li><a href="#3数据分析与可视化">3.数据分析与可视化</a></li>
+      <li><a href="#4机器学习建模">4.机器学习建模</a></li>
+    </ul>
+  </li>
+</ul>
             </nav>
           </aside>
         
-        <p>4.1.	FIRST软件介绍
-FIRST(Molecular Materials Property Prediction Package)是一款研究和设计有机分子材料发光和传输机理以及定量预测发光效率的软件。目前广泛应用于OLED发光和传输机理研究、新型OLED设计以及有机显示与照明材料、有机场效应材料、有机太阳能电池、以及有机光检测、生物传感、有机光通讯等领域。</p>
+        <h2 id="first软件介绍">FIRST软件介绍</h2>
+<p>  Fast vIRtual Screening Tool (快速虚拟筛选工具, FIRST)是一款基于材料学原理、机器学习算法的材料设计/筛选软件。其主要功能有：</p>
+
+<ol>
+  <li>材料虚拟筛选</li>
+  <li>材料性能预测</li>
+  <li>结合材料学原理的机器学习</li>
+  <li>数据挖掘与可视化</li>
+  <li>材料数据库检索</li>
+</ol>
+
+<p>  目前为止, FIRST已应用于二维铁磁材料、含锂固态电解质材料、有机光电发射层材料等等的虚拟筛选，并将逐步推广到更多的材料领域中。</p>
+
+<h2 id="first安装">FIRST安装</h2>
+
+<p>  一体机FIRST安装目录为: <code class="highlighter-rouge">/software/FIRST</code>。双击桌面FIRST图标或者<code class="highlighter-rouge">/software/FIRST/bin/First</code>即可打开FIRST软件。</p>
+
+<h2 id="first软件使用">FIRST软件使用</h2>
+
+<p>  双击桌面<code class="highlighter-rouge">FIRST</code>图标，打开软件主界面，新建一个项目。
+ <img src="/assets/images/first-introduce/manual1.png" alt="image-center" /></p>
+
+<h3 id="1数据库筛选">1.数据库筛选</h3>
+<p>  点击菜单栏中的<code class="highlighter-rouge">Database</code>，选择<code class="highlighter-rouge">QuickMol</code>、<code class="highlighter-rouge">QuickCrystal</code>、<code class="highlighter-rouge">ACED</code>数据库中的一种，分别进入对应界面，
+ <img src="/assets/images/first-introduce/manual2.png" alt="image-center" /></p>
+
+<p>  在<code class="highlighter-rouge">Descriptor</code>选项卡中输入各个描述符的取值范围，单击<code class="highlighter-rouge">Search</code>对材料进行筛选。右下角显示筛选的结果，单击可在上方显示其结构。
+ <img src="/assets/images/first-introduce/manual3.png" alt="image-center" /></p>
+
+<p>  在<code class="highlighter-rouge">AI Descriptor</code>选项卡中，点击<code class="highlighter-rouge">load</code>按钮加载训练好的<code class="highlighter-rouge">.pkl</code>后缀的机器学习模型，点击<code class="highlighter-rouge">filter</code>按钮进行机器学习筛选。
+   <img src="/assets/images/first-introduce/manual4.png" alt="image-center" /></p>
+
+<h3 id="2导入样本材料">2.导入样本材料</h3>
+<p>  点击菜单栏中的<code class="highlighter-rouge">Sample</code>，选择<code class="highlighter-rouge">Molecule</code>或<code class="highlighter-rouge">Crystal</code>，进入对应界面。在右侧分别填入<code class="highlighter-rouge">Class No.</code>的值以标记类别，点击右上角<code class="highlighter-rouge">Import</code>按钮导入对应文件。在描述符界面中选择描述符，点击右下角<code class="highlighter-rouge">Generate</code>，生成<code class="highlighter-rouge">.csv</code>数据文件。
+  <img src="/assets/images/first-introduce/manual5.png" alt="image-center" /></p>
+
+<h3 id="3数据分析与可视化">3.数据分析与可视化</h3>
+<p>  选择<code class="highlighter-rouge">.csv</code>数据文件对应的数据表，菜单栏中的<code class="highlighter-rouge">File</code>用于导出文件，<code class="highlighter-rouge">Compute</code>用于对描述符进行计算，<code class="highlighter-rouge">Statistics</code>对数据进行概况分析并导出。
+  <img src="/assets/images/first-introduce/manual6.png" alt="image-center" /></p>
+
+<p>  选择<code class="highlighter-rouge">Plot</code>，可以选择多列数据，绘制散点图、柱状图、小提琴图等。
+  <img src="/assets/images/first-introduce/manual7.png" alt="image-center" />
+  <img src="/assets/images/first-introduce/manual8.png" alt="image-center" /></p>
+
+<h3 id="4机器学习建模">4.机器学习建模</h3>
+<p>  选择<code class="highlighter-rouge">.csv</code>数据表菜单栏中的<code class="highlighter-rouge">AI</code>，可以使用<code class="highlighter-rouge">Logistics</code>、<code class="highlighter-rouge">SVM</code>、<code class="highlighter-rouge">Linear</code>、<code class="highlighter-rouge">LASSO</code>等分类、回归方法进行机器学习建模。选择参数后点击<code class="highlighter-rouge">Run</code>按钮，完成训练。
+  <img src="/assets/images/first-introduce/manual9.png" alt="image-center" /></p>
+
+<p><img src="/assets/images/first-introduce/manual10.png" alt="image-center" /></p>
 
         
       </section>
@@ -413,7 +471,7 @@ FIRST(Molecular Materials Property Prediction Package)是一款研究和设计�
       
   <nav class="pagination">
     
-      <a href="/hzwsoftware/first-examples/" class="pagination--pager" title="FIRSTt软件的使用介绍
+      <a href="/hzwsoftware/first-examples/" class="pagination--pager" title="FIRST案例
 ">向前</a>
     
     

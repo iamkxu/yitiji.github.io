@@ -1,7 +1,7 @@
 ---
-title: "MOMAP软件的使用介绍"
+title: "MOMAP案例"
 permalink: /hzwsoftware/momap-examples/
-excerpt: "MOMAP软件的使用介绍"
+excerpt: "MOMAP案例"
 last_modified_at: 2019-08-18T15:53:52-04:00
 toc: true
 ---

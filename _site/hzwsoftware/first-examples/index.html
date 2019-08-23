@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>FIRSTt软件的使用介绍 - 鸿之微一体机</title>
-<meta name="description" content="FIRST软件的使用介绍">
+<!-- begin _includes/seo.html --><title>FIRST案例 - 鸿之微一体机</title>
+<meta name="description" content="FIRST案例">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:site_name" content="鸿之微一体机">
-<meta property="og:title" content="FIRSTt软件的使用介绍">
+<meta property="og:title" content="FIRST案例">
 <meta property="og:url" content="http://localhost:4000/hzwsoftware/first-examples/">
 
 
-  <meta property="og:description" content="FIRST软件的使用介绍">
+  <meta property="og:description" content="FIRST案例">
 
 
 
@@ -29,7 +29,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-08-15T14:53:18+08:00">
+  <meta property="article:published_time" content="2019-08-23T17:59:25+08:00">
 
 
 
@@ -369,15 +369,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="FIRSTt软件的使用介绍">
-    <meta itemprop="description" content="FIRST软件的使用介绍">
+    <meta itemprop="headline" content="FIRST案例">
+    <meta itemprop="description" content="FIRST案例">
     
     <meta itemprop="dateModified" content="August 18, 2019">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">FIRSTt软件的使用介绍
+          <h1 id="page-title" class="page__title" itemprop="headline">FIRST案例
 </h1>
           
         </header>
@@ -389,35 +389,15 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 在本页上</h4></header>
               <ul class="toc__menu">
-  <li><a href="#rescu软件介绍">RESCU软件介绍</a></li>
-  <li><a href="#rescu安装环境">RESCU安装环境</a></li>
-  <li><a href="#rescu软件使用">RESCU软件使用</a>
+  <li><a href="#演示案例tadf-oled发射层材料虚拟筛选">演示案例：TADF-OLED发射层材料虚拟筛选</a>
     <ul>
-      <li><a href="#si体系无自旋体系degenerate">Si体系(无自旋体系degenerate)</a>
+      <li><a href="#案例流程">案例流程：</a>
         <ul>
-          <li><a href="#1-自洽计算">(1) 自洽计算</a>
-            <ul>
-              <li><a href="#1-进入指定文件夹及查看相关文件">1. 进入指定文件夹及查看相关文件</a></li>
-              <li><a href="#2-使用pbs排队系统进行自洽计算">2. 使用pbs排队系统进行自洽计算</a></li>
-              <li><a href="#3-输出日志文件及结果查看">3.	输出日志文件及结果查看</a></li>
-            </ul>
-          </li>
-          <li><a href="#2-能带计算">(2) 能带计算</a>
-            <ul>
-              <li><a href="#1-进入指定文件夹及查看相关文件-1">1.	进入指定文件夹及查看相关文件</a></li>
-              <li><a href="#2-使用pbs排队系统进行自洽计算-1">2.	使用pbs排队系统进行自洽计算</a></li>
-              <li><a href="#3-输出日志文件及结果查看-1">3.	输出日志文件及结果查看</a></li>
-              <li><a href="#4-生成能带图及能带数据分析">4.	生成能带图及能带数据分析</a></li>
-            </ul>
-          </li>
-          <li><a href="#3-态密度计算">(3) 态密度计算</a>
-            <ul>
-              <li><a href="#1-进入指定文件夹及查看相关文件-2">1.	进入指定文件夹及查看相关文件</a></li>
-              <li><a href="#2-使用pbs排队系统进行自洽计算-2">2.	使用pbs排队系统进行自洽计算</a></li>
-              <li><a href="#3-输出日志文件及结果查看-2">3.	输出日志文件及结果查看</a></li>
-              <li><a href="#4-生成能带图及能带数据分析-1">4.	生成能带图及能带数据分析</a></li>
-            </ul>
-          </li>
+          <li><a href="#1-建立项目">1. 建立项目</a></li>
+          <li><a href="#2-数据库检索">2. 数据库检索</a></li>
+          <li><a href="#3-导入样本材料数据可视化">3.	导入样本材料&amp;数据可视化</a></li>
+          <li><a href="#4-机器学习训练">4.	机器学习训练</a></li>
+          <li><a href="#5-机器学习筛选">5.	机器学习筛选</a></li>
         </ul>
       </li>
     </ul>
@@ -426,184 +406,56 @@
             </nav>
           </aside>
         
-        <h2 id="rescu软件介绍">RESCU软件介绍</h2>
-<p>  RESCU(Real space Electronic Structure CalcUlator)，由于其新颖的算法和超高的并行效率，使其在大体系下有着很抢眼的表现，在使用相同资源及不牺牲精度的情况下能够计算更大体系的电子结构；同时 RESCU 适用于各类计算资源，从笔记本电脑、桌面单机、到16核、64核、256核、到更大的超算、包括用 GPU 加速等等，可以用来计算一千、数千、上万乃至更大体系的电子结构性质。RESCU 是解决超大体系 KS-DFT 问题的里程碑式的新方法，正在被应用于金属、半导体、绝缘体、液体、DNA、1维、2维、3维、表面、分子、磁性、非磁性、杂质、固体等等不同系统的 KS-DFT 计算。</p>
-<h2 id="rescu安装环境">RESCU安装环境</h2>
-<p>  一体机版RESCU安装目录为：<code class="highlighter-rouge">/software/rescu-2.1.0</code>。在<code class="highlighter-rouge">/public</code>目录下我们还安装了一些运行RESCU所需要的软件，如openmpi，scalapack，lapack，openblas，libxc，mcr等。在该目录下的RESCU_env文件即为RESCU运行所需的环境变量配置文件。用户可以在Linux终端中使用<code class="highlighter-rouge">source</code>命令加载该配置文件，即运行：<code class="highlighter-rouge">source /public/Hzwtech/RESCUPackage/RESCU_env</code>。此时可以通过<code class="highlighter-rouge">which</code> 命令确认环境是否加载完成。例如：</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
+        <h2 id="演示案例tadf-oled发射层材料虚拟筛选">演示案例：TADF-OLED发射层材料虚拟筛选</h2>
 
-<h2 id="rescu软件使用">RESCU软件使用</h2>
-<p>  一体机版RESCU与单机版RESCU在使用上基本一致，唯一的区别在于一体机版的RESCU是在Linux下使用命令行的方法运行RESCU，而单机版的RESCU是在matlab中输入运行命令运行RESCU。因此我们将选取RESCU应用教程中Si体系为例，通过自洽、能带和态密度的计算为用户演示一体机版RESCU的使用。其他RESCU应用教程中的案例用户可以根据该案例自行练习。</p>
+<p>  本案例通过结合数据库检索以及机器学习算法，从200万的有机分子数据库中筛选出最有潜力作为OLED发射层材料的分子结构。流程如下：建立项目 -&gt; 数据库检索 -&gt; 导入样本材料&amp;数据可视化 -&gt; 机器学习训练 -&gt; 机器学习筛选。</p>
 
-<p class="notice--warning"><strong>注：</strong> 该简单教程为使用终端（terminal）进行RESCU计算，请用户先鼠标右键打开一个终端（terminal）。</p>
+<h3 id="案例流程">案例流程：</h3>
 
-<h3 id="si体系无自旋体系degenerate">Si体系(无自旋体系degenerate)</h3>
-<ul>
-  <li>
-    <h4 id="1-自洽计算">(1) 自洽计算</h4>
-    <h5 id="1-进入指定文件夹及查看相关文件">1. 进入指定文件夹及查看相关文件</h5>
-  </li>
-</ul>
+<p>  案例文件夹：<code class="highlighter-rouge">/home/hzwtech/soft_test/first_test/OLED</code></p>
 
-<p>  使用<code class="highlighter-rouge">cd</code>命令进入案例Si体系的文件夹:<code class="highlighter-rouge">/home/hzw/RESCU_example/Si/REAL</code>
-使用<code class="highlighter-rouge">ls</code>命令查看<code class="highlighter-rouge">REAL</code>目录下的文件，对于自洽计算而言需要准备主要参数文件<code class="highlighter-rouge">scf.input</code>，原子结构文件<code class="highlighter-rouge">Si.xyz</code>和基组文件<code class="highlighter-rouge">Si_DZP.mat</code>。</p>
+<h4 id="1-建立项目">1. 建立项目</h4>
 
-<p>  使用<code class="highlighter-rouge">cat</code>命令查看<code class="highlighter-rouge">scf.input</code>文件：</p>
+<p>  打开本地机器上的FIRST软件，新建一个项目。
+<img src="/assets/images/first-introduce/example1.png" alt="image-center" /></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc examples]<span class="nv">$ </span><span class="nb">cat </span>al_lcao_scf.input
-LCAO.status <span class="o">=</span> <span class="nb">true
-</span>info.savepath <span class="o">=</span> <span class="s1">'results/al_lcao_scf'</span>
-info.calculationType <span class="o">=</span> <span class="s1">'self-consistent'</span>
-atom.element <span class="o">=</span> 1
-atom.xyz <span class="o">=</span> <span class="o">[</span>0 0 0]
-domain.latvec <span class="o">=</span> ~eye<span class="o">(</span>3<span class="o">)</span>/2<span class="k">*</span>7.652445391<span class="p">;</span> %  positions <span class="k">in </span>angstrom
-domain.lowres <span class="o">=</span> 2/3
-element<span class="o">(</span>1<span class="o">)</span>.species <span class="o">=</span> <span class="s1">'Al'</span>
-element<span class="o">(</span>1<span class="o">)</span>.path <span class="o">=</span> <span class="s1">'./Al_AtomicData.mat'</span>
-functional.list <span class="o">=</span> <span class="o">{</span><span class="s1">'XC_LDA_X'</span>,<span class="s1">'XC_LDA_C_PW'</span><span class="o">}</span>
-eigensolver.emptyBand <span class="o">=</span> 8
-kpoint.gridn <span class="o">=</span> <span class="o">[</span>3,3,3]
-option.saveLevel<span class="o">=</span>2
+<h4 id="2-数据库检索">2. 数据库检索</h4>
 
-</code></pre></div></div>
-<p>  使用<code class="highlighter-rouge">cat</code>命令查看<code class="highlighter-rouge">Si.xyz</code>文件：</p>
+<p>  点击左上角<code class="highlighter-rouge">Database-QuickMol</code>打开<code class="highlighter-rouge">QuickMol</code>有机分子数据库的界面。
+<img src="/assets/images/first-introduce/example2-QuickMol.png" alt="image-center" /></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc examples]<span class="nv">$ </span><span class="nb">cat </span>Si8.xyz
-8
-Si8
-Si 0.26            0         0
-Si 0         5.1052    5.1052
-Si 5.1052         0    5.1052
-Si 5.1052    5.1052         0
-Si 2.5526    2.5526    2.5526
-Si 2.5526    7.6578    7.6578
-Si 7.6578    2.5526    7.6578
-Si 7.6578    7.6578    2.5526
-</code></pre></div></div>
+<p>  界面上有<code class="highlighter-rouge">2D</code>，<code class="highlighter-rouge">3D</code>, <code class="highlighter-rouge">Fragment</code>，<code class="highlighter-rouge">Element</code>共4类描述符可供选择，并附有中英文解释。输入各个描述符的取值范围后检索可以排除不符合的材料，缩小候选材料数量。后续版本可以根据用户需求自动推荐描述符和取值范围。
+<img src="/assets/images/first-introduce/example3-QuickMol.png" alt="image-center" /></p>
 
-<h5 id="2-使用pbs排队系统进行自洽计算">2. 使用pbs排队系统进行自洽计算</h5>
+<h4 id="3-导入样本材料数据可视化">3.	导入样本材料&amp;数据可视化</h4>
 
-<p>  在一体机中使用的是pbs排队系统来提交RESCU计算任务，相应的命令都写在rescu.pbs脚本中，而rescu.pbs脚本存放在/home/hzw/bin目录下。</p>
+<p>  点击左上角<code class="highlighter-rouge">Sample-Molecule</code>。
+<img src="/assets/images/first-introduce/example4.png" alt="image-center" /></p>
 
-<p>  使用cp命令将rescu.pbs文件复制到/home/hzw/RESCU_example/Si/REAL，并使用ls命令查看是否成功。</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
+<p>  点击右上角<code class="highlighter-rouge">Import</code>按钮，导入不能发光的分子(<code class="highlighter-rouge">/home/hzwtech/soft_test/first_test/OLED/nonOLED</code>文件夹中的<code class="highlighter-rouge">.mol</code>文件)，并再<code class="highlighter-rouge">Class No.</code>中标记为<code class="highlighter-rouge">0</code>类；再点击<code class="highlighter-rouge">Import</code>按钮，导入能够发光的分子，标记为<code class="highlighter-rouge">1</code>类。共导入2类327个有机分子。</p>
 
-<p>  使用cat命令查看rescu.pbs文件：</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
+<p>  在描述符界面中选择<code class="highlighter-rouge">BertzCT</code>, <code class="highlighter-rouge">BalabanJ</code>, <code class="highlighter-rouge">Kappa1</code>, <code class="highlighter-rouge">Kappa2</code>, <code class="highlighter-rouge">Kappa3</code>, <code class="highlighter-rouge">LabuteASA</code>, <code class="highlighter-rouge">RotatableBondsRatio</code>, <code class="highlighter-rouge">qed</code>。点击右下角<code class="highlighter-rouge">Generate</code>，生成数据文件<code class="highlighter-rouge">molecule_redefine.csv</code>。
+<img src="/assets/images/first-introduce/example5.png" alt="image-center" /></p>
 
-<p>蓝色方框前面的为pbs排队系统中的固定格式，具体含义详见pbs介绍章节。这里我们只介绍蓝色方框中的两句命令。</p>
+<p>  选中数据表的3列, 例如<code class="highlighter-rouge">BertzCT</code>, <code class="highlighter-rouge">BalabanJ</code>, <code class="highlighter-rouge">Kappa1</code>，然后在数据表菜单栏中选择<code class="highlighter-rouge">Plot-Scatter3DP</code>，可以绘制出带颜色标度的准3维散点图。<code class="highlighter-rouge">Plot</code>菜单中还有柱状图, 小提琴图, 关联热力图等选项可供用户用于数据可视化。
+<img src="/assets/images/first-introduce/example6.png" alt="image-center" /></p>
 
-<p>  第一句：source /public/Hzwtech/RESCUPackage/RESCU_env 为加载运行RESCU所需的环境变量。</p>
+<h4 id="4-机器学习训练">4.	机器学习训练</h4>
+<p>  数据表菜单<code class="highlighter-rouge">AI-Classification-Logistic</code>，选择逻辑回归分类算法对数据进行训练，得到把分子准确判断为能否作为OLED材料的分类器。</p>
 
-<p>  第二句：mpirun -np 4 RESCU –smi -i scf.input 为使用mpirun和scalapack进行RESCU并行计算，整个计算调用了4个核。更细节的理解如下：</p>
+<p>  把<code class="highlighter-rouge">Class</code>设为目标变量<code class="highlighter-rouge">target variable</code>, <code class="highlighter-rouge">SMILES</code>设为注释变量<code class="highlighter-rouge">annotated variable</code>, 其余变量作为独立变量<code class="highlighter-rouge">Independent variable</code>。
+<img src="/assets/images/first-introduce/example7.png" alt="image-center" /></p>
 
-<p>  整句话分解成mpirun -np 4和RESCU –smi -i scf.input两部分，可以理解为mpirun调用RESCU进行计算。其中mpirun –np 4 为mpirun调用4核进行计算，-np为mpirun的内部命令；RESCU –smi -i scf.input中–smi表示在RESCU计算过程中将使用scalapack并行加速，-i scf.input表示RESCU计算过程中将scf.input作为输入（input）的文件，i即为input的简写。因此RESCU –smi -i scf.input表示RESCU将scf.input文件作为输入文件并使用scalapack进行并行加速。</p>
+<p>  选择参数后点击<code class="highlighter-rouge">Run</code>按钮，完成训练。
+<img src="/assets/images/first-introduce/example8.png" alt="image-center" /></p>
 
-<p>  在/home/hzw/RESCU_example/Si/REAL目录下使用qsub rescu.pbs进行自洽计算，并通过qstat命令进行计算任务查看。</p>
+<h4 id="5-机器学习筛选">5.	机器学习筛选</h4>
+<p>  训练完成后在项目文件夹中生成了与数据表同名的文件夹<code class="highlighter-rouge">molecule_redefine</code>，机器学习训练得到的模型为<code class="highlighter-rouge">.pkl</code>后缀。</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
+<p><img src="/assets/images/first-introduce/example9.png" alt="image-center" /></p>
 
-<h5 id="3-输出日志文件及结果查看">3.	输出日志文件及结果查看</h5>
-<p>  自洽结束后，在计算目录会产生输出日志文件：RESCUlog.out文件和计算结果文件夹results，在results中存在着主要输出文件Si_scf.mat和Si_scf.h5。
-  Notes:1.如果需要修改scf.input或者Atom.xyz文件，可以通过使用vi命令实现，具体使用见Linux基础。2.真实的计算案例中请用户谨慎的选取实空间格点数目domain.lowres及倒空间格点数目 kpoint.gridn，这两个参数与计算结果的精度和可靠性休戚相关，其中domain.lowres尽量不大于0.4。3.自洽计算的输出文件Si_scf.mat和Si_scf.h5需要使用matlab来加载，如果一体机中用户没有安装matlab，用户可以将Si_scf.mat和Si_scf.h5下载到本地电脑用matlab进行加载查看。4.本自洽计算中只使用了4核进行计算，用户在计算真实案例时可以通过修改-np后面的数字来修改核数。5.在计算过程中用户需要查看RESCUlog.out文件中## PARALLEL ##的内容来确认是否开启了mpirun并行和scalapack并行，如下图所示：</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
-<p>  Number of processes = 4表示计算中mpirun并行所调用的核数；Parallel config (smi,gpu,k-para) = (1,0,0) 表示开启了scalapack并行进行加速，其中smi表示的就是scalapack。在计算过程中请务必确保并行信息无误。</p>
-
-<ul>
-  <li>
-    <h4 id="2-能带计算">(2) 能带计算</h4>
-  </li>
-</ul>
-
-<h5 id="1-进入指定文件夹及查看相关文件-1">1.	进入指定文件夹及查看相关文件</h5>
-<p>  使用cat命令查看band.input文件：</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
-<h5 id="2-使用pbs排队系统进行自洽计算-1">2.	使用pbs排队系统进行自洽计算</h5>
-<p>  能带计算的输入文件为band.input文件，因此需要修改下提交任务的脚本，为了不覆盖之前使用的rescu.pbs脚本。我们使用cp命令将rescu.pbs复制并重命名为band.pbs。</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
-<p>  vi打开band.pbs并将RESCU –smi -i scf.input改为RESCU –smi -i band.input。</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
-<p>  在/home/hzw/RESCU_example/Si/REAL目录下使用qsub band.pbs进行能带计算，并通过qstat命令进行计算任务查看。</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
-<p>  在任务计算过程中可以通过tail –f 命令来实时输出RESCUlog.out文件的内容：（tail –f命令可以通过Ctrl + c命令退出）</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>hzw@hzwhpc ~]<span class="nv">$ </span>which mpirun
-/public/mpi/openmpi-1.8.5/bin/mpirun
-</code></pre></div></div>
-
-<h5 id="3-输出日志文件及结果查看-1">3.	输出日志文件及结果查看</h5>
-
-<p>  能带计算结束后，在计算目录会产生输出日志文件：RESCUlog.out文件，能带数据文件BandStructure.txt和计算结果文件夹results，在results中存在着主要输出文件会产生主要的输出文件：Si_bs.mat和Si_bs.h5。</p>
-
-<h5 id="4-生成能带图及能带数据分析">4.	生成能带图及能带数据分析</h5>
-
-<p>  计算结束之后，用户可以使用Si_bs.mat生成能带图，具体操作如下：
-首先，加载RESCU环境：source /public/Hzwtech/RESCUPackage/RESCU_env；
-之后，在计算目录输入：RESCU -p ./results/Si_bs.mat命令调用RESCU进行画图，其中-p为plot的简写，./results/Si_bs.mat表示调用当前文件夹下results文件夹下的Si_bs.mat文件。</p>
-
-<p>  两条命令运行结束之后计算目录已经生成了Si_bs_plot.fig，将该文件在matlab中打开，如果用在一体机中没有安装matlab，建议用户将该文件下载到有matlab的电脑上进行查看。</p>
-
-<p>  得到能带结构图如下：</p>
-
-<p><img src="/assets/images/rescu-image/4-1-Si-band-energy.png" alt="image-center" class="align-center" /></p>
-<center>图4-1 Si的能带图</center>
-
-<p>  使用cat命令查看BandStructure.txt文件，可以看到BandStructure.txt有524行数据，第1行只有一个数字12，代表高对称点数目；第2行是高对称点的字母表示；第3行是高对称点对应的序号；第4行有三个数字260、8、1，其分别表示K点数目能带数目、体系是否有自旋，1表示体系没有自旋；第5-264行是260个K点的坐标；第265-524行是8条能带的数据。</p>
-
-<p class="notice--warning"><strong>Notes</strong>：能带计算需要调用自洽计算的结果，因此必须要先进行自洽计算之后才能进行能带计算。更多的能带计算参数请详见RESCU应用教程。</p>
-
-<ul>
-  <li>
-    <h4 id="3-态密度计算">(3) 态密度计算</h4>
-  </li>
-</ul>
-
-<h5 id="1-进入指定文件夹及查看相关文件-2">1.	进入指定文件夹及查看相关文件</h5>
-
-<p>  使用cat命令查看dos.input文件：</p>
-
-<h5 id="2-使用pbs排队系统进行自洽计算-2">2.	使用pbs排队系统进行自洽计算</h5>
-
-<p>  态密度计算的输入文件为dos.input文件，同样的需要修改下提交任务的脚本。我们使用cp命令将rescu.pbs复制并重命名为dos.pbs。</p>
-
-<p>  vi打开dos.pbs并将RESCU –smi -i scf.input改为RESCU –smi -i dos.input。
-在/home/hzw/RESCU_example/Si/REAL目录下使用qsub dos.pbs进行能带计算，并通过qstat命令进行计算任务查看。</p>
-
-<h5 id="3-输出日志文件及结果查看-2">3.	输出日志文件及结果查看</h5>
-
-<p>  态密度计算结束后，在计算目录会产生输出日志文件：RESCUlog.out文件，态密度数据文件DensityOfStates.txt和计算结果文件夹results，在results中存在着主要输出文件会产生主要的输出文件：Si_dos.mat和Si_dos.h5。</p>
-
-<h5 id="4-生成能带图及能带数据分析-1">4.	生成能带图及能带数据分析</h5>
-
-<p>  计算结束之后，用户可以使用Si_dos.mat生成能带图，具体操作如下：
-首先，加载RESCU环境：source /public/Hzwtech/RESCUPackage/RESCU_env；
-之后，在计算目录输入：RESCU -p ./results/Si_dos.mat命令调用RESCU进行画图。
-两条命令运行结束之后计算目录已经生成了Si_dos_plot.fig，将该文件在matlab中打开，如果用在一体机中没有安装matlab，建议用户将该文件下载到有matlab的电脑上进行查看。
-得到能带结构图如下：
-<img src="/assets/images/rescu-image/4-2-Si-dos.png" alt="image-center" class="align-center" /></p>
-<center>图4-2 Si的总态密度图</center>
-
-<p>  使用cat命令查看DensityOfStates.txt文件，可以看到DensityOfStates.txt有1001行数据，第1行有三个数字1000 1 1，1000代表指定能量范围内的能量点个数、1代表总态密度、1代表degenerate；第2-6表示是否开了投影态密度；7-1006行表示每一个能量点对应的态密度值。</p>
-
-<p class="notice--warning">Notes：态密度计算只需要调用自洽计算的结果，并不需要能带计算结果，这里放在能带计算之后只是个人习惯而已。这里只演示了总态密度计算的过程。投影态密度、局域态密度的等更多计算案例请详见RESCU应用教程。</p>
+<p>  点击<code class="highlighter-rouge">Database-QuickMol</code>, 选择<code class="highlighter-rouge">AI Descriptor</code>, 点击<code class="highlighter-rouge">load</code>按钮加载训练好的<code class="highlighter-rouge">.pkl</code>后缀的机器学习模型，选择<code class="highlighter-rouge">1</code>类。点击<code class="highlighter-rouge">filter</code>按钮完成筛选。
+<img src="/assets/images/first-introduce/example10.png" alt="image-center" /></p>
 
         
       </section>
@@ -627,7 +479,7 @@ Si 7.6578    7.6578    2.5526
 ">向前</a>
     
     
-      <a href="/hzwsoftware/first-manual/" class="pagination--pager" title="FIRST软件的使用介绍
+      <a href="/hzwsoftware/first-manual/" class="pagination--pager" title="FIRST软件的使用教程
 ">向后</a>
     
   </nav>
