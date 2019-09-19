@@ -94,12 +94,13 @@ hzwhardware:
 hzwservice:
   - title: 配套服务与保障
     children:
+      - title: "软硬件保障条款"
+        url: /hzwservice/service-introduce/#一流软硬件保障
       - title: "软件课程培训服务"
         url: /hzwservice/software-service/
       - title: "研究课题顾问服务"
         url: /hzwservice/research-service/
-      - title: "软硬件保障"
-        url: /hzwservice/service-introduce/#一流软硬件保障
+
 
 # hzwconfig links
 hzwconfig:
