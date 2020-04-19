@@ -1,1 +1,1 @@
-#  Website of Hongzhiwei Yitiji
+#  Website of Yitiji
